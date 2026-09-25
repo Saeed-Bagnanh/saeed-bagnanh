@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://saeed-bagnanh.vercel.app</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/og-image.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/about</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/about" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/about" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/about" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/profile.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/projects</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/projects" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/projects" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/projects" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/og-image.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/resume</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/resume" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/resume" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/resume" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/profile.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.85</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/blog</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/blog" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/blog" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/blog" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/og-image.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.85</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/contact</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/contact" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/contact" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/contact" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/og-image.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/projects/bandwal-academy</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/projects/bandwal-academy" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/projects/bandwal-academy" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/projects/bandwal-academy" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/images/bandwal-academy.svg</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.85</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/projects/python-api-platform</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/projects/python-api-platform" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/projects/python-api-platform" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/projects/python-api-platform" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/images/restaurant-system.svg</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.85</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/projects/ecommerce-dotnet</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/projects/ecommerce-dotnet" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/projects/ecommerce-dotnet" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/projects/ecommerce-dotnet" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/images/ecommerce-platform.svg</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.85</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/projects/university-cms-electron</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/projects/university-cms-electron" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/projects/university-cms-electron" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/projects/university-cms-electron" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/images/university-cms.svg</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.85</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/projects/restaurant-management-novelsoft</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/projects/restaurant-management-novelsoft" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/projects/restaurant-management-novelsoft" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/projects/restaurant-management-novelsoft" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/images/restaurant-system.svg</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.85</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/blog/ci-cd-github-actions-automation</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/blog/ci-cd-github-actions-automation" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/blog/ci-cd-github-actions-automation" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/blog/ci-cd-github-actions-automation" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/og-image.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/blog/designing-reliable-python-apis</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/blog/designing-reliable-python-apis" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/blog/designing-reliable-python-apis" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/blog/designing-reliable-python-apis" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/og-image.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://saeed-bagnanh.vercel.app/blog/scaling-dotnet-ecommerce-nopcommerce</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://saeed-bagnanh.vercel.app/blog/scaling-dotnet-ecommerce-nopcommerce" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://saeed-bagnanh.vercel.app/blog/scaling-dotnet-ecommerce-nopcommerce" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://saeed-bagnanh.vercel.app/blog/scaling-dotnet-ecommerce-nopcommerce" />
+<image:image>
+<image:loc>https://saeed-bagnanh.vercel.app/og-image.png</image:loc>
+</image:image>
+<lastmod>2026-09-25T11:08:19.387Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+</urlset>

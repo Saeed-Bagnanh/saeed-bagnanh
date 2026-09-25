@@ -46,8 +46,8 @@ export default function ProjectsPage() {
         '@type': 'CollectionPage',
         '@id': `${getCanonicalUrl('/projects')}#webpage`,
         url: getCanonicalUrl('/projects'),
-        name: 'Engineering Projects & Enterprise Case Studies',
-        description: `Portfolio of production systems, software platforms, and hardware builds created and led by ${SITE_CONFIG.fullName}.`,
+        name: 'Web Platforms & Software Projects',
+        description: `Portfolio of web platforms and software applications developed by ${SITE_CONFIG.fullName}.`,
         isPartOf: {
           '@id': `${SITE_URL}/#website`,
         },

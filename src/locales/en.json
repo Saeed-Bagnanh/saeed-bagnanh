@@ -25,10 +25,10 @@
     "initiateContact": "Initiate Engagement",
     "viewGithub": "GitHub Profile",
     "stats": {
-      "years": "Years Engineering",
-      "deployments": "Automated Deployments",
-      "precision": "Backend Focus",
-      "ciSpeed": "Public Repositories"
+      "years": "Years Experience",
+      "platforms": "Live Platforms",
+      "projects": "Documented Projects",
+      "languages": "Languages"
     }
   },
   "differentiator": {
@@ -70,23 +70,23 @@
   },
   "skills": {
     "tag": "Technical Mastery",
-    "title": "Comprehensive Stack & Specialized Domains",
-    "desc": "Categorized mastery across backend architectures, modern server-rendered frontends, hardware firmware, and automated DevOps pipelines."
+    "title": "Technical Skills",
+    "desc": "Skills drawn from backend services, web applications, relational databases, and cross-platform mobile development."
   },
   "projects": {
-    "tag": "Flagship Case Studies",
-    "title": "Enterprise Deployments & Engineering Case Studies",
-    "desc": "In-depth technical breakdowns of production systems, architecture diagrams, and measurable impact metrics.",
+    "tag": "Selected Work",
+    "title": "Web Platforms & Application Projects",
+    "desc": "Projects and professional experience documented in my curriculum vitae.",
     "viewCaseStudy": "Read Full Case Study",
     "filterAll": "All Case Studies",
     "filterFullStack": "Full-Stack & Web",
     "filterHardware": "Hardware & Automation",
     "filterEcommerce": "E-Commerce",
-    "filterEnterprise": "Enterprise Systems",
+    "filterEnterprise": "Business Systems",
     "caseStudyDetails": {
       "problem": "The Challenge & Context",
       "approach": "Engineering Approach & Architecture",
-      "outcomes": "Measurable Outcomes & Business Impact",
+      "outcomes": "Project Outcomes",
       "architectureHighlights": "Key Architecture Highlights",
       "techStack": "Technologies Deployed",
       "backToProjects": "Back to All Case Studies",
@@ -95,9 +95,11 @@
     }
   },
   "experience": {
-    "tag": "Career & Leadership",
-    "title": "Professional Leadership & Work History",
-    "keyAchievements": "Key Engineering Wins:"
+    "tag": "Experience",
+    "title": "Professional Experience",
+    "desc": "Work across independent platforms, a medicines distribution application, and a travel booking website.",
+    "keyAchievements": "Highlights",
+    "highlights": "PROJECT HIGHLIGHTS:"
   },
   "github": {
     "tag": "Open Source & Live Telemetry",
@@ -107,14 +109,14 @@
     "forks": "Forks",
     "updated": "Updated",
     "viewAll": "Explore GitHub Profile",
-    "fallbackNotice": "Live activity fetched with automated caching."
+    "fallbackNotice": "Public repository data from GitHub."
   },
   "contact": {
     "tag": "Direct Engagement",
     "title": "Let's Engineer High-Availability Systems.",
-    "desc": "Available for Technical Lead appointments, enterprise architecture consultations, and strategic engineering contracts. Based in Mukalla, Yemen, delivering worldwide.",
-    "slaTitle": "Service Level Agreement (SLA)",
-    "slaDesc": "Inquiries receive a direct technical response within 24 hours.",
+    "desc": "Based in Mukalla, Yemen. Get in touch about backend development, web applications, APIs, or cross-platform mobile projects.",
+    "slaTitle": "Direct contact",
+    "slaDesc": "Email and phone details are listed above for direct inquiries.",
     "emailLabel": "Executive Email",
     "phoneLabel": "Direct Phone / WhatsApp",
     "locationLabel": "Headquarters Location",
@@ -125,12 +127,12 @@
       "message": "Project Scope & Requirements",
       "namePlaceholder": "e.g., Alex Vance",
       "emailPlaceholder": "alex@company.com",
-      "subjectPlaceholder": "e.g., Technical Lead / Architecture Consultation",
+      "subjectPlaceholder": "e.g., Backend or full-stack development",
       "messagePlaceholder": "Describe your project timeline, technical stack, or architecture goals...",
       "send": "Transmit Message",
       "sending": "Transmitting...",
       "successTitle": "Message Received Successfully!",
-      "successDesc": "Thank you for reaching out. I will review your requirements and reply within 24 hours.",
+      "successDesc": "Thank you for reaching out. I will review your message and get back to you.",
       "error": "Failed to send message. Please reach out directly via email or WhatsApp."
     }
   },

@@ -71,8 +71,8 @@ export default function ResumeClient() {
                 </p>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
                   {isAr 
-                    ? 'المؤسس والقائد التقني في مادبوت نوفا • خبرة 5+ سنوات في هندسة البرمجيات والعتاد' 
-                    : 'Full-Stack Software Developer • Backend & API Engineering'}
+                    ? 'مطور برمجيات شامل • الأنظمة الخلفية وتطبيقات الويب'
+                    : 'Full-Stack Software Developer • Backend Systems & Web Applications'}
                 </p>
               </div>
 
@@ -84,16 +84,18 @@ export default function ResumeClient() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={13} className="text-emerald-500 shrink-0" />
-                  <a href={`tel:${PERSONAL_INFO.phones[0]}`} className="hover:underline">{PERSONAL_INFO.phones[0]}</a>
+                  <a href={`tel:${PERSONAL_INFO.phones[0].replace(/\s/g, '')}`} className="hover:underline">{PERSONAL_INFO.phones[0]}</a>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={13} className="text-emerald-500 shrink-0" />
                   <span>{isAr ? PERSONAL_INFO.locationAr : PERSONAL_INFO.location}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Globe size={13} className="text-emerald-500 shrink-0" />
-                  <a href={PERSONAL_INFO.agencyUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{PERSONAL_INFO.agencyUrl}</a>
-                </div>
+                {PERSONAL_INFO.websites.map((website) => (
+                  <div key={website.url} className="flex items-center gap-2">
+                    <Globe size={13} className="text-emerald-500 shrink-0" />
+                    <a href={website.url} target="_blank" rel="noopener noreferrer" className="hover:underline">{website.name}</a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -199,7 +201,7 @@ export default function ResumeClient() {
                 </p>
               </div>
               <div className="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold shrink-0">
-                {PERSONAL_INFO.education.period} • {isAr ? 'مرتبة الشرف' : PERSONAL_INFO.education.gpa}
+                {PERSONAL_INFO.education.period}
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ import { CASE_STUDIES, CaseStudy } from '../data/portfolioData';
 export default function Projects() {
   const { t, i18n } = useTranslation();
   const isAr = i18n.language === 'ar';
-  const [filter, setFilter] = useState<'All' | 'Full-Stack' | 'Hardware & Automation' | 'E-Commerce' | 'Enterprise Systems'>('All');
+  const [filter, setFilter] = useState<'All' | 'Full-Stack' | 'Enterprise Systems'>('All');
 
   const filteredStudies = filter === 'All' 
     ? CASE_STUDIES 
@@ -42,8 +42,6 @@ export default function Projects() {
           {[
             { key: 'All', label: t('projects.filterAll') },
             { key: 'Full-Stack', label: t('projects.filterFullStack') },
-            { key: 'Hardware & Automation', label: t('projects.filterHardware') },
-            { key: 'E-Commerce', label: t('projects.filterEcommerce') },
             { key: 'Enterprise Systems', label: t('projects.filterEnterprise') }
           ].map((tab) => (
             <button

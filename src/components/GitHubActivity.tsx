@@ -28,53 +28,9 @@ const LANGUAGE_COLORS: Record<string, string> = {
   'C++': 'text-rose-400',
 };
 
-const FALLBACK_REPOS: Repo[] = [
-  {
-    id: 1,
-    name: 'bandwal-core-platform',
-    description: 'High-performance Laravel 12 multi-tenant platform with Nuxt 4, SSR, and zero-downtime deployment pipelines.',
-    html_url: 'https://github.com/Saeed-Bagnanh',
-    stargazers_count: 28,
-    forks_count: 7,
-    language: 'PHP',
-    updated_at: '2025-02-15T12:00:00Z',
-  },
-  {
-    id: 2,
-            name: 'my-first-agent',
-    description: 'A personal experiment exploring agent workflows and software development.',
-            html_url: 'https://github.com/Saeed-Bagnanh/my-first-agent',
-    stargazers_count: 42,
-    forks_count: 12,
-    language: 'C++',
-    updated_at: '2025-01-20T10:00:00Z',
-  },
-  {
-    id: 3,
-    name: 'enterprise-dotnet-ecommerce',
-    description: 'Scalable .NET 8 / C# multi-vendor medical equipment store with real-time inventory and analytics.',
-            html_url: 'https://github.com/Saeed-Bagnanh/saeed-bagnanh',
-    stargazers_count: 35,
-    forks_count: 9,
-    language: 'C#',
-    updated_at: '2025-02-01T08:30:00Z',
-  },
-  {
-    id: 4,
-    name: 'university-academic-cms',
-    description: 'Academic management system with Electron.NET desktop client and automated grading matrices.',
-            html_url: 'https://github.com/Saeed-Bagnanh/is-a-dev-subdomains-repo',
-    stargazers_count: 19,
-    forks_count: 4,
-    language: 'TypeScript',
-    updated_at: '2024-12-10T14:20:00Z',
-  },
-];
-
 export default function GitHubActivity() {
   const { t } = useTranslation();
-  const [repos, setRepos] = useState<Repo[]>(FALLBACK_REPOS);
-  const [loading, setLoading] = useState(false);
+  const [repos, setRepos] = useState<Repo[]>([]);
 
   useEffect(() => {
     const fetchRepos = async () => {
@@ -95,7 +51,7 @@ export default function GitHubActivity() {
     fetchRepos();
   }, []);
 
-  if (loading || repos.length === 0) return null;
+  if (repos.length === 0) return null;
 
   return (
     <section className="py-24 relative overflow-hidden bg-slate-50 dark:bg-slate-900/30">

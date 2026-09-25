@@ -10,7 +10,7 @@ import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateRootJson
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) | Full-Stack Software Engineer & Technical Lead`,
+    default: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) | Full-Stack Software Developer`,
     template: `%s | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
   },
   description: SITE_CONFIG.description,
@@ -20,12 +20,9 @@ export const metadata: Metadata = {
     ...SITE_CONFIG.coreSkills,
     'Full-Stack Software Engineer',
     'Senior Software Engineer',
-    'Technical Lead',
     'Backend Engineer',
-    'Software Architect',
-    'Systems Architect',
+    'Full-Stack Software Developer',
     'API Engineer',
-    'DevOps CI/CD Engineer',
     'Yemen Software Engineer',
     'Hadhramaut Full-Stack Developer',
     'Mukalla Software Developer',
@@ -39,7 +36,7 @@ export const metadata: Metadata = {
   creator: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username})`,
   publisher: SITE_CONFIG.fullName,
   category: 'technology',
-  classification: 'Software Engineering, Systems Architecture & Hardware Prototyping',
+  classification: 'Backend and Full-Stack Software Development',
   manifest: '/site.webmanifest',
   icons: {
     icon: [
@@ -53,7 +50,7 @@ export const metadata: Metadata = {
     shortcut: ['/favicon.svg'],
   },
   openGraph: {
-    title: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) | Full-Stack Engineer & Technical Lead`,
+    title: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) | Full-Stack Software Developer`,
     description: SITE_CONFIG.description,
     url: SITE_URL,
     siteName: `${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) Portfolio`,
@@ -67,7 +64,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/png',
-        alt: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Software Engineer & Technical Lead`,
+        alt: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Software Developer`,
       },
     ],
   },

@@ -21,8 +21,8 @@ export const SITE_CONFIG = {
   tagline: 'Backend systems, APIs, and dependable full-stack products',
   taglineAr: 'أنظمة خلفية وواجهات برمجية ومنتجات شاملة موثوقة',
   
-  description: 'Professional portfolio of Saeed Mohammed Omer Ba-gnanh, a full-stack software developer from Mukalla, Yemen, focused on backend systems, APIs, Laravel, Django, Python, and modern web applications.',
-  descriptionAr: 'الملف المهني لسعيد محمد عمر باقنانة، مطور برمجيات شامل من المكلا في اليمن، يركز على الأنظمة الخلفية وواجهات البرمجة وLaravel وDjango وPython وتطبيقات الويب الحديثة.',
+  description: 'Portfolio of Saeed Mohammed Omer Ba-gnanh, a full-stack software developer from Mukalla, Yemen, experienced in backend systems, web applications, APIs, Laravel, Django, ASP.NET, and Flutter.',
+  descriptionAr: 'الملف المهني لسعيد محمد عمر باقنانة، مطور برمجيات شامل من المكلا في اليمن، لديه خبرة في الأنظمة الخلفية وتطبيقات الويب وواجهات البرمجة وLaravel وDjango وASP.NET وFlutter.',
   
   location: 'Al-Mukalla, Hadhramaut, Yemen',
   locationAr: 'المكلا، حضرموت، اليمن',
@@ -30,7 +30,7 @@ export const SITE_CONFIG = {
   countryCode: 'YE',
   
   emails: ['saeed344422@gmail.com'],
-  phones: [],
+  phones: ['+967 775057438'],
   
   agency: '',
   agencyUrl: '',
@@ -46,11 +46,11 @@ export const SITE_CONFIG = {
   aliasesAr: ['سعيد محمد عمر باقنانة', 'سعيد باقنانة'],
   
   coreSkills: [
-    'Laravel 12',
-    'Nuxt.js 4',
+    'Laravel',
+    'Vue.js 3',
     'Django',
     'FastAPI',
-    'ASP.NET',
+    'ASP.NET Core',
     'Flutter',
     'Dart',
     'TypeScript',
@@ -61,10 +61,13 @@ export const SITE_CONFIG = {
     'PostgreSQL',
     'MySQL',
     'REST APIs',
-    'CI/CD Automation',
-    'GitHub Actions',
-    'Docker',
-    'Redis',
+    'Flutter',
+    'GetX',
+    'MySQL',
+    'PostgreSQL',
+    'SQL Server',
+    'Git',
+    'GitHub',
   ],
 };
 
@@ -106,6 +109,7 @@ export function generateRootJsonLd() {
         url: SITE_URL,
         image: getAbsoluteUrl('/profile.png'),
         email: `mailto:${SITE_CONFIG.emails[0]}`,
+        telephone: SITE_CONFIG.phones[0],
         gender: 'Male',
         nationality: {
           '@type': 'Country',
@@ -144,6 +148,8 @@ export function generateRootJsonLd() {
           SITE_CONFIG.socials.github,
           SITE_CONFIG.socials.linkedin,
           SITE_CONFIG.repositoryUrl,
+          'https://dhad.me',
+          'https://muqtabasat.com',
         ],
       },
       {

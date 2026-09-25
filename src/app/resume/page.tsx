@@ -3,7 +3,7 @@ import ResumeClient from '../../components/ResumeClient';
 import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcrumbJsonLd } from '../../lib/siteConfig';
 
 export const metadata: Metadata = {
-  title: `Executive Curriculum Vitae (CV) & Verified Credentials | ${SITE_CONFIG.shortName}`,
+  title: `Curriculum Vitae (CV) | ${SITE_CONFIG.shortName}`,
   description: `Official Curriculum Vitae of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Software Developer focused on Laravel, Django, Python, APIs, databases, and modern web applications.`,
   alternates: {
     canonical: getCanonicalUrl('/resume'),
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/png',
-        alt: `${SITE_CONFIG.fullName} CV & Verified Credentials`,
+        alt: `${SITE_CONFIG.fullName} Curriculum Vitae`,
       },
     ],
   },
@@ -50,7 +50,7 @@ export default function ResumePage() {
         '@type': 'ProfilePage',
         '@id': `${getCanonicalUrl('/resume')}#webpage`,
         url: getCanonicalUrl('/resume'),
-        name: `Curriculum Vitae & Verified Credentials — ${SITE_CONFIG.fullName}`,
+        name: `Curriculum Vitae — ${SITE_CONFIG.fullName}`,
         description: `CV detailing backend and full-stack software development experience of ${SITE_CONFIG.fullName}.`,
         mainEntity: {
           '@id': `${SITE_URL}/#person`,

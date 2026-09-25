@@ -79,35 +79,37 @@ export const PERSONAL_INFO = {
   username: 'Saeed-Bagnanh',
   title: 'Full-Stack Software Developer',
   titleAr: 'مطور برمجيات شامل',
-  agency: '',
-  agencyUrl: '',
   location: 'Mukalla, Hadhramaut, Yemen',
   locationAr: 'المكلا، حضرموت، اليمن',
-  experienceYears: '10+',
+  experienceYears: '5+',
   emails: ['saeed344422@gmail.com'],
-  phones: [],
+  phones: ['+967 775057438'],
+  websites: [
+    { name: 'dhad.me', url: 'https://dhad.me' },
+    { name: 'muqtabasat.com', url: 'https://muqtabasat.com' }
+  ],
   github: 'https://github.com/Saeed-Bagnanh',
+  linkedin: 'https://www.linkedin.com/in/saeed-bagnanh-36b077289/',
   education: {
-    degree: 'B.Sc. Computer Science / Computer Information Systems',
-    degreeAr: 'بكالوريوس علوم الحاسوب / نظم المعلومات الحاسوبية',
+    degree: 'B.Sc. in Computer Information Systems',
+    degreeAr: 'بكالوريوس نظم المعلومات الحاسوبية',
     institution: 'Al-Ahgaff University',
     institutionAr: 'جامعة الأحقاف',
-    period: '2019 – 2023',
-    gpa: 'Excellent with Honors'
+    period: '2019 – 2023'
   },
   languages: [
     { name: 'Arabic', nameAr: 'العربية', level: 'Native', levelAr: 'اللغة الأم' },
-    { name: 'English', nameAr: 'الإنجليزية', level: 'Fluent / Professional', levelAr: 'طلاقة واحترافية' }
+    { name: 'English', nameAr: 'الإنجليزية', level: 'Professional Working Proficiency', levelAr: 'إجادة مهنية' }
   ],
   differentiator: {
-    headline: 'Bridging High-Throughput Software Architecture with Physical Hardware Engineering',
-    headlineAr: 'الجمع بين بنية البرمجيات فائقة الأداء وهندسة الأجهزة المادية والآلات',
-    narrative: 'I build reliable backend systems and full-stack products, with a practical focus on APIs, database-backed applications, and maintainable delivery. My work spans Laravel, Django, Python, ASP.NET, JavaScript, TypeScript, and cross-platform mobile development.',
-    narrativeAr: 'أبني أنظمة خلفية موثوقة ومنتجات برمجية شاملة مع تركيز عملي على واجهات البرمجة وتطبيقات قواعد البيانات وسهولة الصيانة. تمتد خبرتي عبر Laravel وDjango وPython وASP.NET وJavaScript وTypeScript وتطوير تطبيقات متعددة المنصات.'
+    headline: 'Backend systems and full-stack products',
+    headlineAr: 'الأنظمة الخلفية والمنتجات البرمجية الشاملة',
+    narrative: 'I build web applications and backend services, with experience in REST APIs, relational databases, and production platforms. My work includes Laravel, Django, ASP.NET, Vue.js, JavaScript, and Flutter.',
+    narrativeAr: 'أطوّر تطبيقات الويب والخدمات الخلفية، مع خبرة في واجهات REST وقواعد البيانات العلائقية والمنصات المنشورة. تشمل تقنياتي Laravel وDjango وASP.NET وVue.js وJavaScript وFlutter.'
   }
 };
 
-export const CASE_STUDIES: CaseStudy[] = [
+const LEGACY_CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'bandwal-academy',
     title: 'Bandwal Academy E-Learning Ecosystem',
@@ -418,7 +420,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   }
 ];
 
-export const SKILL_CATEGORIES: SkillCategory[] = [
+const LEGACY_SKILL_CATEGORIES: SkillCategory[] = [
   {
     id: 'languages',
     title: 'Core Languages',
@@ -514,7 +516,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   }
 ];
 
-export const WORK_EXPERIENCES: ExperienceItem[] = [
+const LEGACY_WORK_EXPERIENCES: ExperienceItem[] = [
   {
     id: 'full-stack-development',
     company: 'Independent Software Development',
@@ -648,93 +650,352 @@ export const WORK_EXPERIENCES: ExperienceItem[] = [
 export const SOCIAL_PROFILES: SocialProfile[] = [
   { platform: 'GitHub', url: 'https://github.com/Saeed-Bagnanh', handle: '@Saeed-Bagnanh', icon: 'Github' },
   { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/saeed-bagnanh-36b077289', handle: 'Saeed Bagnanh', icon: 'Linkedin' },
+  { platform: 'Website', url: 'https://dhad.me', handle: 'dhad.me', icon: 'Globe' },
+  { platform: 'Website', url: 'https://muqtabasat.com', handle: 'muqtabasat.com', icon: 'Globe' },
   { platform: 'Email', url: 'mailto:saeed344422@gmail.com', handle: 'saeed344422@gmail.com', icon: 'Mail' }
 ];
 
 export const BLOG_POSTS = [
   {
-    id: 'ci-cd-github-actions-automation',
-    title: 'Reducing Deployment Time from Hours to < 3 Minutes with GitHub Actions & Laravel 12 / Nuxt 4',
-    titleAr: 'تخفيض زمن النشر من ساعات إلى أقل من ٣ دقائق عبر GitHub Actions وLaravel 12 / Nuxt 4',
+    id: 'maintaining-independent-web-platforms',
+    title: 'Maintaining Independent Web Platforms',
+    titleAr: 'تطوير وصيانة منصات ويب مستقلة',
     date: 'August 2026',
     dateAr: 'أغسطس 2026',
-    category: 'DevOps & Architecture',
-    categoryAr: 'العمليات وهندسة النظم',
+    category: 'Web Development',
+    categoryAr: 'تطوير الويب',
     readTime: '6 min read',
     readTimeAr: '٦ دقائق قراءة',
-    excerpt: 'How we eliminated manual deployment errors, automated testing, and achieved zero-downtime production deployments for the Bandwal Academy platform.',
-    excerptAr: 'كيف قمنا بالقضاء على أخطاء النشر اليدوي وأتمتة الفحص الشامل وتحقيق نشر فوري بدون انقطاع لمنصة أكاديمية بندوال.',
+    excerpt: 'Notes from launching and maintaining dhad.me and muqtabasat.com, with work spanning application features, server configuration, and data queries.',
+    excerptAr: 'ملاحظات من إطلاق dhad.me وmuqtabasat.com وصيانتهما، والعمل على ميزات التطبيقات وإعداد الخوادم واستعلامات البيانات.',
     author: 'Saeed Bagnanh',
     content: `
-      <p class="lead">Manual deployments are a ticking time bomb in enterprise systems. When a release requires SSHing into production, pulling Git commits, running composer install, compiling assets, and clearing caches manually, human error is inevitable.</p>
-      
-      <h3>The Problem at Bandwal Academy</h3>
-      <p>Before implementing our automated pipeline, deployments required senior engineering attention, taking anywhere from 45 minutes to several hours. A forgotten database migration or cache clear often introduced temporary 500 errors during peak student hours.</p>
-      
-      <h3>The Architecture: Automated GitHub Actions Workflow</h3>
-      <p>We designed a dual-stage CI/CD architecture targeting both Staging and Production environments:</p>
-      <ul>
-        <li><strong>Step 1: Parallel Testing & Linting</strong> — PHPStan strict analysis, Pest unit/feature test suites, and ESLint / TypeScript type-checks for Nuxt.js 4.</li>
-        <li><strong>Step 2: Nuxt 4 SSR Production Build</strong> — Pre-compiling server-rendered Nitro output and optimizing WebP assets.</li>
-        <li><strong>Step 3: Zero-Downtime Atomic Symlink Switch</strong> — Uploading release packages to isolated timestamped directories and executing zero-downtime atomic symlink swaps once all health-checks pass.</li>
-      </ul>
-
-      <blockquote>"Automating deployment isn't just about speed; it's about engineering confidence. When deploying takes under 3 minutes, teams release fixes continuously without fear."</blockquote>
-
-      <h3>Measurable Outcomes</h3>
-      <p>The entire pipeline reduced deployment duration to under 3 minutes, eliminated release regressions, and enabled continuous value delivery for thousands of active learners.</p>
+      <p class="lead">Since 2023, I have launched and maintained dhad.me and muqtabasat.com as independent web platforms.</p>
+      <h3>Work across the application</h3>
+      <p>The work spans server configuration, application features, data queries, and deployment. One documented feature area is dynamic text processing for platform users.</p>
+      <h3>Ongoing maintenance</h3>
+      <p>Running independent platforms means continuing to improve their application workflows and keep their production environments maintained.</p>
     `
   },
   {
-    id: 'designing-reliable-python-apis',
-    title: 'Designing Reliable Python APIs for Growing Products',
-    titleAr: 'تصميم واجهات Python موثوقة للمنتجات المتنامية',
+    id: 'medicines-distribution-catalog',
+    title: 'A Digital Catalog for Medicines Distribution',
+    titleAr: 'كتالوج رقمي لتوزيع الأدوية',
     date: 'July 2026',
     dateAr: 'يوليو 2026',
-    category: 'Hardware & Embedded',
-    categoryAr: 'العتاد والأنظمة المضمنة',
+    category: 'Application Development',
+    categoryAr: 'تطوير التطبيقات',
     readTime: '8 min read',
     readTimeAr: '٨ دقائق قراءة',
-    excerpt: 'Practical patterns for separating request handling, business rules, persistence, and integrations in Django and FastAPI services.',
-    excerptAr: 'أنماط عملية لفصل معالجة الطلبات وقواعد الأعمال والتخزين والتكاملات في خدمات Django وFastAPI.',
+    excerpt: 'A Laravel and Vue.js application for pharmaceutical product distribution, including an electronic catalog for less-common medicines.',
+    excerptAr: 'تطبيق باستخدام Laravel وVue.js لتوزيع المنتجات الدوائية، يتضمن كتالوجاً إلكترونياً للأدوية الأقل شيوعاً.',
     author: 'Saeed Bagnanh',
     content: `
-      <p class="lead">Most web developers operate exclusively in virtual memory buffers and HTTP requests. Bridging the divide between digital software logic and electro-mechanical physical execution fundamentally sharpens your systems thinking.</p>
-      
-      <h3>1. Start with a clear API boundary</h3>
-      <p>A backend becomes easier to change when request parsing, validation, business rules, and persistence have clear responsibilities. This keeps framework details from leaking into every part of the application.</p>
-
-      <h3>2. Model data around real workflows</h3>
-      <p>Relational models should reflect the product's language and protect the invariants that matter. Validation belongs close to the boundary, while reusable business rules belong in services that can be tested directly.</p>
-
-      <h3>3. Make integrations replaceable</h3>
-      <p>External services change. Isolating integrations behind small interfaces makes failures easier to handle and allows the core application to remain stable when a provider or transport changes.</p>
-      
-      <blockquote>"Understanding physics, electrical timing, and mechanical tolerances makes you a vastly better software architect. Hardware leaves zero room for sloppy assumptions."</blockquote>
+      <p class="lead">From 2022 to 2023, I developed a digital distribution application for a medicines factory using Laravel, Vue.js, and Tailwind CSS.</p>
+      <h3>Making product information easier to find</h3>
+      <p>The project included an electronic catalog intended to help people locate less-common medicines across local pharmacies.</p>
+      <h3>Connecting the application workflow</h3>
+      <p>The application brought product publication and distribution into a centralized workflow, with a Laravel API and a Vue.js interface.</p>
     `
   },
   {
-    id: 'scaling-dotnet-ecommerce-nopcommerce',
-    title: 'Architecting High-Throughput .NET Core E-Commerce Platforms & Custom nopCommerce Plugins',
-    titleAr: 'هندسة منصات تجارة إلكترونية عالية الأداء عبر .NET Core وإضافات nopCommerce المخصصة',
+    id: 'afaq-travel-booking-workflow',
+    title: 'Building a Travel Booking Workflow with ASP.NET',
+    titleAr: 'بناء تدفق لحجوزات السفر باستخدام ASP.NET',
     date: 'June 2026',
     dateAr: 'يونيو 2026',
-    category: 'E-Commerce & .NET',
-    categoryAr: 'التجارة الإلكترونية و.NET',
+    category: 'Application Development',
+    categoryAr: 'تطوير التطبيقات',
     readTime: '5 min read',
     readTimeAr: '٥ دقائق قراءة',
-    excerpt: 'Best practices for custom payment gateway plugins, SQL Server index optimization, and distributed caching in enterprise .NET e-commerce systems.',
-    excerptAr: 'أفضل الممارسات لتطوير إضافات بوابات الدفع المخصصة، تحسين فهارس SQL Server والتخزين المؤقت الموزع في أنظمة .NET.',
+    excerpt: 'A look at the AFAQ HADHRAMAUT travel website features: route selection, ticket reservations, authentication, and payment processing.',
+    excerptAr: 'نظرة على ميزات موقع آفاق حضرموت للسفر: اختيار المسارات وحجز التذاكر ومصادقة المستخدمين ومعالجة المدفوعات.',
     author: 'Saeed Bagnanh',
     content: `
-      <p class="lead">Reliable software starts with clear boundaries between application logic, data, and external services. This article outlines practical patterns for building maintainable backend systems.</p>
-      
-      <h3>Custom Plugin Architecture</h3>
-      <p>Rather than modifying core framework classes, we developed decoupled C# plugins using dependency injection, isolating regional payment webhooks and custom shipping calculations.</p>
-
-      <h3>Database & Query Tuning</h3>
-      <p>By analyzing execution plans in SQL Server and introducing covering non-clustered indexes on frequently filtered catalog dimensions, we reduced query execution time from 420ms to under 18ms.</p>
+      <p class="lead">From 2021 to 2022, I worked on the AFAQ HADHRAMAUT land-travel booking website using ASP.NET and C#.</p>
+      <h3>Supporting the travel reservation flow</h3>
+      <p>The application covered route and destination selection, user authentication, and ticket reservations for travel across the Arabian Peninsula.</p>
+      <h3>Handling the booking transaction</h3>
+      <p>Payment processing was part of the booking workflow, alongside the core reservation features.</p>
     `
+  }
+];
+
+export const CASE_STUDIES: CaseStudy[] = [
+  {
+    slug: 'dhad-muqtabasat-platforms',
+    title: 'dhad.me & muqtabasat.com',
+    titleAr: 'منصتا dhad.me وmuqtabasat.com',
+    subtitle: 'Independent web platforms and ongoing product development',
+    subtitleAr: 'منصات ويب مستقلة وتطوير مستمر للمنتجات',
+    category: 'Full-Stack',
+    categoryAr: 'تطوير شامل',
+    role: 'Founder & Lead Full-Stack Developer',
+    roleAr: 'المؤسس والمطور الشامل الرئيسي',
+    period: '2023 – Present',
+    image: '/images/ecommerce-platform.svg',
+    featured: true,
+    summary: 'Launched and maintain two independent web platforms, working across server configuration, application features, data queries, and production deployment.',
+    summaryAr: 'إطلاق منصتين مستقلتين للويب وصيانتهما، مع العمل على إعداد الخوادم وميزات التطبيقات واستعلامات البيانات والنشر.',
+    problem: 'The platforms require ongoing development and maintenance across backend workflows, content features, and production operations.',
+    problemAr: 'تتطلب المنصتان تطويراً وصيانة مستمرين لتدفقات الأنظمة الخلفية وميزات المحتوى وعمليات الإنتاج.',
+    approach: 'Built and maintained web application features, including dynamic text processing, database query improvements, server configuration, and end-to-end deployment.',
+    approachAr: 'تطوير وصيانة ميزات تطبيقات الويب، بما فيها معالجة النصوص ديناميكياً وتحسين استعلامات قواعد البيانات وإعداد الخوادم والنشر.',
+    architecture: {
+      description: 'Independent production web platforms with backend features and user-facing interfaces.',
+      descriptionAr: 'منصات ويب مستقلة منشورة، تضم ميزات للأنظمة الخلفية وواجهات للمستخدمين.',
+      highlights: [
+        'Launched and maintained two live web platforms',
+        'Developed dynamic text-processing features',
+        'Managed server configuration and application deployment',
+        'Improved data queries and backend workflows'
+      ],
+      highlightsAr: [
+        'إطلاق منصتين للويب وصيانتهما',
+        'تطوير ميزات لمعالجة النصوص ديناميكياً',
+        'إدارة إعداد الخوادم ونشر التطبيقات',
+        'تحسين استعلامات البيانات وتدفقات الأنظمة الخلفية'
+      ]
+    },
+    measurableOutcomes: [
+      { metric: '2', metricAr: '٢', label: 'Independent production platforms', labelAr: 'منصتان مستقلتان منشورتان' },
+      { metric: '2023 – Present', metricAr: '٢٠٢٣ – الآن', label: 'Ongoing development', labelAr: 'تطوير مستمر' }
+    ],
+    technologies: ['Django', 'HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://dhad.me'
+  },
+  {
+    slug: 'medicines-distribution-system',
+    title: 'Medicines Factory Distribution System',
+    titleAr: 'نظام توزيع منتجات مصنع الأدوية',
+    subtitle: 'Digital product catalog and distribution workflows',
+    subtitleAr: 'كتالوج رقمي وتدفقات لتوزيع المنتجات',
+    category: 'Enterprise Systems',
+    categoryAr: 'أنظمة الأعمال',
+    role: 'Full-Stack Developer',
+    roleAr: 'مطور برمجيات شامل',
+    period: '2022 – 2023',
+    image: '/images/restaurant-system.svg',
+    featured: true,
+    summary: 'Developed a distribution application for a medicines factory, including a product catalog to help users find less-common medicines across local pharmacies.',
+    summaryAr: 'تطوير تطبيق توزيع لمصنع أدوية، يتضمن كتالوجاً يساعد المستخدمين في العثور على الأدوية الأقل شيوعاً في الصيدليات المحلية.',
+    problem: 'Finding less-common medicines across local pharmacies was difficult for consumers.',
+    problemAr: 'كان العثور على الأدوية الأقل شيوعاً في الصيدليات المحلية أمراً صعباً للمستهلكين.',
+    approach: 'Built a Laravel API and Vue.js application with a searchable electronic catalog and workflows for publishing and distributing products.',
+    approachAr: 'بناء واجهة Laravel برمجية وتطبيق Vue.js مع كتالوج إلكتروني وتدفقات لنشر المنتجات وتوزيعها.',
+    architecture: {
+      description: 'A web application connecting a Laravel API, a Vue.js interface, and relational product data.',
+      descriptionAr: 'تطبيق ويب يربط واجهة Laravel برمجية بواجهة Vue.js وبيانات المنتجات العلائقية.',
+      highlights: [
+        'Laravel 9 API for the distribution application',
+        'Vue.js 3 interface styled with Tailwind CSS',
+        'Electronic catalog for product discovery',
+        'Structured product and distribution data'
+      ],
+      highlightsAr: [
+        'واجهة Laravel 9 برمجية لتطبيق التوزيع',
+        'واجهة Vue.js 3 منسقة باستخدام Tailwind CSS',
+        'كتالوج إلكتروني للعثور على المنتجات',
+        'تنظيم بيانات المنتجات والتوزيع'
+      ]
+    },
+    measurableOutcomes: [
+      { metric: 'Online catalog', metricAr: 'كتالوج إلكتروني', label: 'Digital access to medicines information', labelAr: 'وصول رقمي إلى معلومات الأدوية' },
+      { metric: '2022 – 2023', metricAr: '٢٠٢٢ – ٢٠٢٣', label: 'Project period', labelAr: 'فترة المشروع' }
+    ],
+    technologies: ['Laravel 9', 'PHP', 'Vue.js 3', 'Tailwind CSS', 'JavaScript', 'MySQL']
+  },
+  {
+    slug: 'afaq-travel-booking',
+    title: 'AFAQ HADHRAMAUT Travel Booking Platform',
+    titleAr: 'منصة آفاق حضرموت لحجوزات السفر',
+    subtitle: 'Land travel reservations and route selection',
+    subtitleAr: 'حجوزات السفر البري واختيار المسارات',
+    category: 'Full-Stack',
+    categoryAr: 'تطوير شامل',
+    role: 'Full-Stack Developer',
+    roleAr: 'مطور برمجيات شامل',
+    period: '2021 – 2022',
+    image: '/images/university-cms.svg',
+    featured: false,
+    summary: 'Developed a travel booking website for routes across the Arabian Peninsula, with user authentication, destination selection, ticket reservations, and payment workflows.',
+    summaryAr: 'تطوير موقع لحجوزات السفر بين وجهات شبه الجزيرة العربية، مع مصادقة المستخدمين واختيار الوجهات وحجز التذاكر وتدفقات الدفع.',
+    problem: 'Travelers needed a web-based way to select routes and manage ticket reservations.',
+    problemAr: 'احتاج المسافرون إلى وسيلة عبر الويب لاختيار المسارات وإدارة حجوزات التذاكر.',
+    approach: 'Implemented core booking features for route selection, user authentication, ticket reservations, and payment processing.',
+    approachAr: 'تنفيذ ميزات الحجز الأساسية لاختيار المسارات ومصادقة المستخدمين وحجز التذاكر ومعالجة المدفوعات.',
+    architecture: {
+      description: 'An ASP.NET and C# web application for travel booking workflows.',
+      descriptionAr: 'تطبيق ويب باستخدام ASP.NET وC# لتدفقات حجز السفر.',
+      highlights: [
+        'User authentication and booking workflows',
+        'Destination and route selection',
+        'Ticket reservation features',
+        'Payment processing modules'
+      ],
+      highlightsAr: [
+        'مصادقة المستخدمين وتدفقات الحجز',
+        'اختيار الوجهات والمسارات',
+        'ميزات حجز التذاكر',
+        'وحدات معالجة المدفوعات'
+      ]
+    },
+    measurableOutcomes: [
+      { metric: 'Booking website', metricAr: 'موقع للحجوزات', label: 'Travel reservation workflow', labelAr: 'تدفق لحجوزات السفر' },
+      { metric: '2021 – 2022', metricAr: '٢٠٢١ – ٢٠٢٢', label: 'Project period', labelAr: 'فترة المشروع' }
+    ],
+    technologies: ['ASP.NET', 'C#']
+  }
+];
+
+export const SKILL_CATEGORIES: SkillCategory[] = [
+  {
+    id: 'languages',
+    title: 'Programming Languages',
+    titleAr: 'لغات البرمجة',
+    icon: 'Code2',
+    description: 'Languages used in backend, web, and mobile application development.',
+    descriptionAr: 'لغات مستخدمة في تطوير الأنظمة الخلفية وتطبيقات الويب والهواتف.',
+    skills: [
+      { name: 'PHP', level: 'Proficient' },
+      { name: 'Python', level: 'Proficient' },
+      { name: 'C#', level: 'Proficient' },
+      { name: 'JavaScript', level: 'Proficient' },
+      { name: 'TypeScript', level: 'Proficient' },
+      { name: 'Dart', level: 'Proficient' }
+    ]
+  },
+  {
+    id: 'backend',
+    title: 'Backend & APIs',
+    titleAr: 'الأنظمة الخلفية وواجهات البرمجة',
+    icon: 'Server',
+    description: 'Backend frameworks, API development, and application workflows.',
+    descriptionAr: 'أطر الأنظمة الخلفية وتطوير الواجهات البرمجية وتدفقات التطبيقات.',
+    skills: [
+      { name: 'Laravel', level: 'Proficient' },
+      { name: 'Django', level: 'Proficient' },
+      { name: 'ASP.NET Core', level: 'Proficient' },
+      { name: 'FastAPI', level: 'Proficient' },
+      { name: 'REST APIs', level: 'Proficient' },
+      { name: 'Authentication & Authorization', level: 'Proficient' }
+    ]
+  },
+  {
+    id: 'web',
+    title: 'Web Development',
+    titleAr: 'تطوير الويب',
+    icon: 'Layout',
+    description: 'Frontend frameworks and styling tools used in web applications.',
+    descriptionAr: 'أطر الواجهات وأدوات التنسيق المستخدمة في تطبيقات الويب.',
+    skills: [
+      { name: 'Vue.js 3', level: 'Proficient' },
+      { name: 'React', level: 'Proficient' },
+      { name: 'HTML & CSS', level: 'Proficient' },
+      { name: 'Tailwind CSS', level: 'Proficient' }
+    ]
+  },
+  {
+    id: 'data-mobile-tools',
+    title: 'Data, Mobile & Tools',
+    titleAr: 'البيانات والهواتف والأدوات',
+    icon: 'Database',
+    description: 'Relational database systems, cross-platform apps, and development tools.',
+    descriptionAr: 'قواعد البيانات العلائقية والتطبيقات متعددة المنصات وأدوات التطوير.',
+    skills: [
+      { name: 'MySQL', level: 'Proficient' },
+      { name: 'PostgreSQL', level: 'Proficient' },
+      { name: 'SQL Server', level: 'Proficient' },
+      { name: 'Flutter & GetX', level: 'Proficient' },
+      { name: 'Git & GitHub', level: 'Proficient' }
+    ]
+  }
+];
+
+export const WORK_EXPERIENCES: ExperienceItem[] = [
+  {
+    id: 'independent-platforms',
+    company: 'dhad.me & muqtabasat.com',
+    companyAr: 'dhad.me وmuqtabasat.com',
+    role: 'Founder & Lead Full-Stack Developer',
+    roleAr: 'المؤسس والمطور الشامل الرئيسي',
+    period: '2023 – Present',
+    periodAr: '٢٠٢٣ – حتى الآن',
+    location: 'Mukalla, Yemen',
+    locationAr: 'المكلا، اليمن',
+    description: [
+      'Launched and maintain independent production web platforms.',
+      'Manage server configuration, application features, data queries, and deployment.'
+    ],
+    descriptionAr: [
+      'إطلاق منصات ويب مستقلة منشورة وصيانتها.',
+      'إدارة إعداد الخوادم وميزات التطبيقات واستعلامات البيانات والنشر.'
+    ],
+    keyWins: [
+      'Built dynamic text-processing features for platform users',
+      'Maintain two live digital platforms'
+    ],
+    keyWinsAr: [
+      'تطوير ميزات لمعالجة النصوص ديناميكياً لمستخدمي المنصات',
+      'صيانة منصتين رقميتين منشورتين'
+    ],
+    technologies: ['Django', 'HTML', 'CSS', 'JavaScript']
+  },
+  {
+    id: 'medicines-distribution',
+    company: 'Medicines Factory Distribution System',
+    companyAr: 'نظام توزيع منتجات مصنع الأدوية',
+    role: 'Full-Stack Developer',
+    roleAr: 'مطور برمجيات شامل',
+    period: '2022 – 2023',
+    periodAr: '٢٠٢٢ – ٢٠٢٣',
+    location: 'Yemen',
+    locationAr: 'اليمن',
+    description: [
+      'Developed a digital distribution application for a pharmaceutical factory.',
+      'Built an electronic catalog to help users find less-common medicines at local pharmacies.'
+    ],
+    descriptionAr: [
+      'تطوير تطبيق رقمي للتوزيع لصالح مصنع أدوية.',
+      'بناء كتالوج إلكتروني لمساعدة المستخدمين في العثور على الأدوية الأقل شيوعاً في الصيدليات المحلية.'
+    ],
+    keyWins: [
+      'Implemented Laravel API and Vue.js 3 application features',
+      'Organized product catalog and distribution workflows'
+    ],
+    keyWinsAr: [
+      'تنفيذ ميزات عبر واجهة Laravel البرمجية وتطبيق Vue.js 3',
+      'تنظيم كتالوج المنتجات وتدفقات التوزيع'
+    ],
+    technologies: ['Laravel 9', 'PHP', 'Vue.js 3', 'Tailwind CSS', 'JavaScript', 'MySQL']
+  },
+  {
+    id: 'afaq-travel-platform',
+    company: 'AFAQ HADHRAMAUT Travel Platform',
+    companyAr: 'منصة آفاق حضرموت للسفر',
+    role: 'Full-Stack Developer',
+    roleAr: 'مطور برمجيات شامل',
+    period: '2021 – 2022',
+    periodAr: '٢٠٢١ – ٢٠٢٢',
+    location: 'Hadhramaut, Yemen',
+    locationAr: 'حضرموت، اليمن',
+    description: [
+      'Developed a land-travel ticket booking website for routes across the Arabian Peninsula.',
+      'Implemented route selection, user authentication, reservations, and payment workflows.'
+    ],
+    descriptionAr: [
+      'تطوير موقع لحجز تذاكر السفر البري للمسارات عبر شبه الجزيرة العربية.',
+      'تنفيذ اختيار المسارات ومصادقة المستخدمين والحجوزات وتدفقات الدفع.'
+    ],
+    keyWins: [
+      'Built core ticket allocation and reservation features',
+      'Implemented secure user access and transaction workflows'
+    ],
+    keyWinsAr: [
+      'بناء ميزات توزيع التذاكر والحجوزات الأساسية',
+      'تنفيذ وصول آمن للمستخدمين وتدفقات المعاملات'
+    ],
+    technologies: ['ASP.NET', 'C#']
   }
 ];
 

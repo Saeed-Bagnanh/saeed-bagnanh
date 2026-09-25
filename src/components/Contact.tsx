@@ -9,6 +9,7 @@ import {
   Send, 
   Github, 
   Linkedin, 
+  Globe,
   Twitter, 
   Terminal, 
   Code2, 
@@ -37,8 +38,9 @@ export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const socials = [
-    { icon: Github, href: 'https://github.com/Saeed-Bagnanh', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/saeed-bagnanh-36b077289', label: 'LinkedIn' },
+    { icon: Github, href: PERSONAL_INFO.github, label: 'GitHub' },
+    { icon: Linkedin, href: PERSONAL_INFO.linkedin, label: 'LinkedIn' },
+    ...PERSONAL_INFO.websites.map((website) => ({ icon: Globe, href: website.url, label: website.name })),
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -89,10 +91,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider">{t('contact.phoneLabel')}</p>
-                  <div className="flex flex-col sm:flex-row sm:gap-4 font-mono text-sm font-bold text-slate-900 dark:text-white">
-                    <a href={`tel:${PERSONAL_INFO.phones[0]}`} className="hover:text-emerald-500 transition-colors">{PERSONAL_INFO.phones[0]}</a>
-                    <span className="text-slate-400 hidden sm:inline">•</span>
-                    <a href={`tel:${PERSONAL_INFO.phones[1]}`} className="hover:text-emerald-500 transition-colors">{PERSONAL_INFO.phones[1]}</a>
+                  <div className="font-mono text-sm font-bold text-slate-900 dark:text-white">
+                    <a href={`tel:${PERSONAL_INFO.phones[0].replace(/\s/g, '')}`} className="hover:text-emerald-500 transition-colors">{PERSONAL_INFO.phones[0]}</a>
                   </div>
                 </div>
               </div>

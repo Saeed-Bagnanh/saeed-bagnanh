@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `Contact ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Engineering Consultation`,
-    description: `Full-Stack Software Engineer & Technical Lead. Direct consultation channel.`,
+    description: `Contact ${SITE_CONFIG.fullName} about backend, web, and mobile application development.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
   },

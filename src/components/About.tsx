@@ -15,17 +15,17 @@ import {
 import { useTranslation } from '@/context/LanguageContext';
 import Link from 'next/link';
 import Image from 'next/image';
-import { PERSONAL_INFO } from '../data/portfolioData';
+import { CASE_STUDIES, PERSONAL_INFO } from '../data/portfolioData';
 
 export default function About() {
   const { t, i18n } = useTranslation();
   const isAr = i18n.language === 'ar';
 
   const stats = [
-    { label: t('hero.stats.years'), value: isAr ? '٥+' : '5+' },
-    { label: t('hero.stats.ciSpeed'), value: isAr ? '< ٣ دقائق' : '< 3 Min' },
-    { label: t('hero.stats.precision'), value: isAr ? '٠.٠٥ ملم' : '0.05 mm' },
-    { label: isAr ? 'مرتبة الشرف' : 'Honors Degree', value: isAr ? 'امتياز مع الشرف' : 'GPA 3.9+' },
+    { label: t('hero.stats.years'), value: PERSONAL_INFO.experienceYears },
+    { label: t('hero.stats.platforms'), value: String(PERSONAL_INFO.websites.length) },
+    { label: t('hero.stats.projects'), value: String(CASE_STUDIES.length) },
+    { label: t('hero.stats.languages'), value: String(PERSONAL_INFO.languages.length) },
   ];
 
   return (
@@ -62,7 +62,7 @@ export default function About() {
                   {isAr ? PERSONAL_INFO.education.degreeAr : PERSONAL_INFO.education.degree}
                 </div>
                 <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                  {isAr ? PERSONAL_INFO.education.institutionAr : PERSONAL_INFO.education.institution} ({PERSONAL_INFO.education.period}) • {isAr ? 'تخرج بامتياز مع مرتبة الشرف' : PERSONAL_INFO.education.gpa}
+                  {isAr ? PERSONAL_INFO.education.institutionAr : PERSONAL_INFO.education.institution} ({PERSONAL_INFO.education.period})
                 </div>
               </div>
             </div>

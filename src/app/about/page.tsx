@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Systems Architect`,
+    title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Software Developer`,
     description: `Full-Stack Software Developer focused on backend systems, APIs, and modern web applications.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
@@ -51,7 +51,7 @@ export default function AboutPage() {
         '@id': `${getCanonicalUrl('/about')}#webpage`,
         url: getCanonicalUrl('/about'),
         name: `About ${SITE_CONFIG.fullName}`,
-        description: `Detailed professional background, architectural tenets, and hardware engineering biography of ${SITE_CONFIG.fullName}.`,
+        description: `Professional background and software development experience of ${SITE_CONFIG.fullName}.`,
         mainEntity: {
           '@id': `${SITE_URL}/#person`,
         },

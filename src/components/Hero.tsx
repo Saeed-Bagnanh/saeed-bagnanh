@@ -12,6 +12,7 @@ import {
   Box, 
   Image as ImageIcon, 
   Dribbble, 
+  Globe,
   Mail, 
   Phone, 
   FileDown, 
@@ -23,17 +24,17 @@ import {
 import { useTranslation } from '@/context/LanguageContext';
 import Link from 'next/link';
 import Image from 'next/image';
-import { PERSONAL_INFO, SOCIAL_PROFILES } from '../data/portfolioData';
+import { CASE_STUDIES, PERSONAL_INFO, SOCIAL_PROFILES } from '../data/portfolioData';
 
 export default function Hero() {
   const { t, i18n } = useTranslation();
   const isAr = i18n.language === 'ar';
 
   const stats = [
-    { label: t('hero.stats.years'), value: '5+' },
-    { label: t('hero.stats.ciSpeed'), value: '< 3 Min' },
-    { label: t('hero.stats.precision'), value: '0.05 mm' },
-    { label: t('hero.stats.deployments'), value: '100%' },
+    { label: t('hero.stats.years'), value: PERSONAL_INFO.experienceYears },
+    { label: t('hero.stats.platforms'), value: String(PERSONAL_INFO.websites.length) },
+    { label: t('hero.stats.projects'), value: String(CASE_STUDIES.length) },
+    { label: t('hero.stats.languages'), value: String(PERSONAL_INFO.languages.length) },
   ];
 
   return (
@@ -109,7 +110,7 @@ export default function Hero() {
               <span className="text-xs font-mono uppercase text-slate-400 mr-2 rtl:ml-2 rtl:mr-0">Channels:</span>
               {SOCIAL_PROFILES.slice(0, 8).map((social) => (
                 <a 
-                  key={social.platform}
+                  key={social.url}
                   href={social.url} 
                   target="_blank"
                   rel="noopener noreferrer"
@@ -119,6 +120,7 @@ export default function Hero() {
                 >
                   {social.platform === 'GitHub' && <Github size={18} />}
                   {social.platform === 'LinkedIn' && <Linkedin size={18} />}
+                  {social.platform === 'Website' && <Globe size={18} />}
                   {social.platform.includes('X') && <Twitter size={18} />}
                   {social.platform === 'Stack Overflow' && <Terminal size={18} />}
                   {social.platform === 'Dev.to' && <Code2 size={18} />}

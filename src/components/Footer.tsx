@@ -11,16 +11,8 @@ export default function Footer() {
   };
 
   const socials = [
-    { icon: Github, href: 'https://github.com/ak01redwan', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/ak01redwan', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://x.com/ak01redwan', label: 'X' },
-    { icon: Terminal, href: 'https://stackoverflow.com/users/ak01redwan', label: 'Stack Overflow' },
-    { icon: Code2, href: 'https://dev.to/ak01redwan', label: 'Dev.to' },
-    { icon: PenTool, href: 'https://medium.com/@ak01redwan', label: 'Medium' },
-    { icon: Box, href: 'https://codepen.io/ak01redwan', label: 'CodePen' },
-    { icon: Image, href: 'https://www.behance.net/ak01redwan', label: 'Behance' },
-    { icon: Dribbble, href: 'https://dribbble.com/ak01redwan', label: 'Dribbble' },
-    { icon: Phone, href: 'tel:+967776248526', label: 'Phone' },
+    { icon: Github, href: 'https://github.com/Saeed-Bagnanh', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/saeed-bagnanh-36b077289', label: 'LinkedIn' },
   ];
 
   return (
@@ -29,10 +21,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <Link href="/" className="text-xl font-display font-bold tracking-tighter">
-              AK01<span className="text-emerald-500">.</span>REDWAN
+              SAEED<span className="text-emerald-500">.</span>BAGNANH
             </Link>
             <p className="text-sm text-slate-500 mt-2">
-              © {new Date().getFullYear()} ak01redwan. {t('footer.rights')}
+              © {new Date().getFullYear()} Saeed Bagnanh. {t('footer.rights')}
             </p>
           </div>
 

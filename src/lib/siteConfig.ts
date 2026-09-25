@@ -4,88 +4,55 @@
  */
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://ak01redwan-portfolio.vercel.app'
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://saeed-bagnanh.vercel.app'
 ).replace(/\/+$/, '');
 
 export const SITE_CONFIG = {
-  name: 'Abdulrahman Redhwan',
-  fullName: 'Abdulrahman Khalid Abdullah Redhwan',
-  fullNameAr: 'عبدالرحمن خالد عبدالله رضوان',
-  shortName: 'Abdulrahman Redhwan',
-  shortNameAr: 'عبدالرحمن رضوان',
-  username: 'ak01redwan',
+  name: 'Saeed Bagnanh',
+  fullName: 'Saeed Mohammed Omer Ba-gnanh',
+  fullNameAr: 'سعيد محمد عمر باجنّاح',
+  shortName: 'Saeed Bagnanh',
+  shortNameAr: 'سعيد باجنّاح',
+  username: 'Saeed-Bagnanh',
   
-  title: 'Full-Stack Software Engineer & Technical Lead',
-  titleAr: 'مهندس برمجيات شامل وقائد تقني',
+  title: 'Full-Stack Software Developer',
+  titleAr: 'مطور برمجيات شامل',
   
-  tagline: 'Bridging High-Throughput Software Architecture with Physical Hardware & CNC Automation',
-  taglineAr: 'الجمع بين هندسة المنظومات البرمجية المؤسسية وتصنيع الآلات الفيزيائية المؤتمتة',
+  tagline: 'Backend systems, APIs, and dependable full-stack products',
+  taglineAr: 'أنظمة خلفية وواجهات برمجية ومنتجات شاملة موثوقة',
   
-  description: 'Executive Portfolio of Abdulrahman Khalid Abdullah Redhwan (ak01redwan) — Full-Stack Software Engineer & Technical Lead specializing in Laravel 12, Nuxt 4, Next.js 16, .NET Core, automated CI/CD pipelines, and custom 3-axis CNC hardware automation. Based in Al-Mukalla, Hadhramaut, Yemen; providing remote engineering excellence globally.',
-  descriptionAr: 'الملف المهني للمهندس عبدالرحمن خالد عبدالله رضوان (ak01redwan) — مهندس برمجيات شامل وقائد تقني، متخصص في Laravel 12 وNuxt 4 وNext.js و.NET Core وخطوط النشر المؤتمتة CI/CD وتصنيع آلات الـ CNC. المكلا، حضرموت، اليمن.',
+  description: 'Professional portfolio of Saeed Mohammed Omer Ba-gnanh, a full-stack software developer from Mukalla, Yemen, focused on backend systems, APIs, Laravel, Django, Python, and modern web applications.',
+  descriptionAr: 'الملف المهني لسعيد محمد عمر باجنّاح، مطور برمجيات شامل من المكلا في اليمن، يركز على الأنظمة الخلفية وواجهات البرمجة وLaravel وDjango وPython وتطبيقات الويب الحديثة.',
   
   location: 'Al-Mukalla, Hadhramaut, Yemen',
   locationAr: 'المكلا، حضرموت، اليمن',
   country: 'Yemen',
   countryCode: 'YE',
   
-  emails: ['ak01redwan@gmail.com', 'ak01redwan@madbootnova.com'],
-  phones: ['+967 776 716 697', '+967 776 248 526'],
+  emails: ['saeed344422@gmail.com'],
+  phones: [],
   
-  agency: 'Madboot Nova',
-  agencyUrl: 'https://madbootnova.com',
-  repositoryUrl: 'https://github.com/ak01redwan/ak01redwan-portfolio',
+  agency: '',
+  agencyUrl: '',
+  repositoryUrl: 'https://github.com/Saeed-Bagnanh/saeed-bagnanh',
   
   socials: {
-    github: 'https://github.com/ak01redwan',
-    linkedin: 'https://www.linkedin.com/in/ak01redwan',
-    twitter: 'https://x.com/ak01redwan',
-    stackoverflow: 'https://stackoverflow.com/users/ak01redwan',
-    devto: 'https://dev.to/ak01redwan',
-    medium: 'https://medium.com/@ak01redwan',
+    github: 'https://github.com/Saeed-Bagnanh',
+    linkedin: 'https://www.linkedin.com/in/saeed-bagnanh-36b077289',
   },
   
-  aliases: [
-    'ak01redwan',
-    'Abdulrahman Redhwan',
-    'Abdulrahman Khalid Abdullah Redhwan',
-    'Abdu Redwan',
-    'Abdu Khalid',
-    'Abdulrahman Khalid',
-    'Abdulrahman K. Redhwan',
-    'A. K. Redhwan',
-    'AK',
-    'ak01',
-    'ak01code',
-    'ak10redwan',
-    'ak10code',
-    'ak programmer',
-    'ak developer',
-    'ak code',
-    'ak مبرمج',
-    'ak المطور',
-  ],
+  aliases: ['Saeed Mohammed Omer Ba-gnanh', 'Saeed Bagnanh', 'Saeed-Bagnanh'],
   
-  aliasesAr: [
-    'عبدالرحمن خالد عبدالله رضوان',
-    'عبدالرحمن رضوان',
-    'عبدو رضوان',
-    'عبدو خالد',
-    'عبدالرحمن خالد',
-    'عبدالرحمن رضوان مبرمج',
-    'عبدالرحمن رضوان مطور',
-    'ak01redwan مبرمج',
-    'ak01redwan مطور',
-    'ak01code مبرمج',
-    'ak01code مطور',
-  ],
+  aliasesAr: ['سعيد محمد عمر باجنّاح', 'سعيد باجنّاح'],
   
   coreSkills: [
     'Laravel 12',
     'Nuxt.js 4',
-    'Next.js 16',
-    'React 19',
-    'Vue.js 3',
+    'Django',
+    'FastAPI',
+    'ASP.NET',
+    'Flutter',
+    'Dart',
     'TypeScript',
     'PHP',
     '.NET Core',
@@ -98,10 +65,6 @@ export const SITE_CONFIG = {
     'GitHub Actions',
     'Docker',
     'Redis',
-    'CNC Machine Engineering',
-    'G-Code & M-Code',
-    'Arduino Embedded Systems',
-    'GRBL / Marlin Firmware',
   ],
 };
 
@@ -143,7 +106,6 @@ export function generateRootJsonLd() {
         url: SITE_URL,
         image: getAbsoluteUrl('/profile.png'),
         email: `mailto:${SITE_CONFIG.emails[0]}`,
-        telephone: SITE_CONFIG.phones[0],
         gender: 'Male',
         nationality: {
           '@type': 'Country',
@@ -160,14 +122,9 @@ export function generateRootJsonLd() {
           name: 'Al-Ahgaff University',
           url: 'https://ahgaff.edu',
         },
-        worksFor: {
-          '@type': 'Organization',
-          name: SITE_CONFIG.agency,
-          url: SITE_CONFIG.agencyUrl,
-        },
         hasOccupation: {
           '@type': 'Occupation',
-          name: 'Full-Stack Software Engineer & Technical Lead',
+          name: SITE_CONFIG.title,
           occupationalCategory: '15-1252.00',
           skills: SITE_CONFIG.coreSkills.join(', '),
         },
@@ -186,10 +143,6 @@ export function generateRootJsonLd() {
         sameAs: [
           SITE_CONFIG.socials.github,
           SITE_CONFIG.socials.linkedin,
-          SITE_CONFIG.socials.twitter,
-          SITE_CONFIG.socials.stackoverflow,
-          SITE_CONFIG.socials.devto,
-          SITE_CONFIG.socials.medium,
           SITE_CONFIG.repositoryUrl,
         ],
       },
@@ -199,9 +152,9 @@ export function generateRootJsonLd() {
         url: SITE_URL,
         name: `${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Official Portfolio`,
         alternateName: [
-          'ak01redwan Portfolio',
-          'Abdulrahman Redhwan Portfolio',
-          'موقع عبدالرحمن رضوان',
+          'Saeed Bagnanh Portfolio',
+          'Saeed Mohammed Omer Ba-gnanh Portfolio',
+          'موقع سعيد باجنّاح',
         ],
         description: SITE_CONFIG.description,
         inLanguage: ['en-US', 'ar-YE'],

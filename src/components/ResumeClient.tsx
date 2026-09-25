@@ -72,7 +72,7 @@ export default function ResumeClient() {
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
                   {isAr 
                     ? 'المؤسس والقائد التقني في مادبوت نوفا • خبرة 5+ سنوات في هندسة البرمجيات والعتاد' 
-                    : 'Founder & Technical Lead at Madboot Nova • 5+ Years Engineering'}
+                    : 'Full-Stack Software Developer • Backend & API Engineering'}
                 </p>
               </div>
 
@@ -106,8 +106,8 @@ export default function ResumeClient() {
             </h2>
             <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
               {isAr 
-                ? 'مهندس برمجيات شامل وقائد تقني يمتلك أكثر من 5 سنوات من الخبرة المعمارية العميقة في بناء تطبيقات الويب الحديثة، المنظومات الموزعة، وأتمتة الآلات والعتاد الفيزيائي. مؤسس وكالة مادبوت نوفا (Madboot Nova)، وكبير المعماريين لمنصات التعليم والتجارة الإلكترونية، ومصمم وباني آلات CNC ثلاثية المحاور بمتحكمات Arduino وأكواد G-Code.'
-                : 'Senior Full-Stack Software Engineer and Technical Lead with 5+ years of engineering mastery across modern web applications, distributed systems, and physical hardware automation. Founder of Madboot Nova, lead architect on enterprise e-commerce and higher-education CMS platforms, and maker of custom 3-axis CNC machines with Arduino and G-code automation.'}
+                ? 'مطور برمجيات شامل يركز على الأنظمة الخلفية وواجهات البرمجة وتطبيقات الويب الحديثة باستخدام Laravel وDjango وPython وASP.NET وJavaScript وTypeScript.'
+                : 'Full-Stack Software Developer focused on backend systems, APIs, and modern web applications using Laravel, Django, Python, ASP.NET, JavaScript, and TypeScript.'}
             </p>
           </div>
 
@@ -206,8 +206,8 @@ export default function ResumeClient() {
 
           {/* Verified Handles */}
           <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap justify-between items-center text-xs font-mono text-slate-500 gap-3">
-            <span>Primary Handle: @ak01redwan</span>
-            <span>Agency: madbootnova.com</span>
+            <span>GitHub: @Saeed-Bagnanh</span>
+            <span>Location: Mukalla, Yemen</span>
             <span>{isAr ? 'المكلا، حضرموت، اليمن' : 'Al-Mukalla, Hadhramaut, Yemen'}</span>
           </div>
         </motion.div>

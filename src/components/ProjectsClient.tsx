@@ -41,7 +41,7 @@ export default function ProjectsClient() {
             {t('projects.more.desc')}
           </p>
           <a 
-            href="https://github.com/ak01redwan" 
+            href="https://github.com/Saeed-Bagnanh"
             target="_blank" 
             rel="noopener noreferrer"
             className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold transition-all inline-flex items-center gap-2 shadow-lg shadow-emerald-500/20"

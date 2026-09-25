@@ -37,15 +37,8 @@ export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const socials = [
-    { icon: Github, href: 'https://github.com/ak01redwan', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/ak01redwan', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://x.com/ak01redwan', label: 'X' },
-    { icon: Terminal, href: 'https://stackoverflow.com/users/ak01redwan', label: 'Stack Overflow' },
-    { icon: Code2, href: 'https://dev.to/ak01redwan', label: 'Dev.to' },
-    { icon: PenTool, href: 'https://medium.com/@ak01redwan', label: 'Medium' },
-    { icon: Box, href: 'https://codepen.io/ak01redwan', label: 'CodePen' },
-    { icon: ImageIcon, href: 'https://www.behance.net/ak01redwan', label: 'Behance' },
-    { icon: Dribbble, href: 'https://dribbble.com/ak01redwan', label: 'Dribbble' },
+    { icon: Github, href: 'https://github.com/Saeed-Bagnanh', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/saeed-bagnanh-36b077289', label: 'LinkedIn' },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {

@@ -3,8 +3,8 @@ import AboutClient from '../../components/AboutClient';
 import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcrumbJsonLd } from '../../lib/siteConfig';
 
 export const metadata: Metadata = {
-  title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Systems Architect & Maker`,
-  description: `Biography and engineering philosophy of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Software Engineer & Technical Lead specializing in enterprise SaaS, Laravel, Nuxt SSR, .NET Core, CI/CD, and custom 3-axis CNC hardware automation.`,
+  title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Full-Stack Developer`,
+  description: `Biography and engineering philosophy of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Software Developer specializing in backend systems, APIs, Laravel, Django, and Python.`,
   alternates: {
     canonical: getCanonicalUrl('/about'),
     languages: {
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Full-Stack Engineer & Hardware Maker`,
-    description: `Learn about ${SITE_CONFIG.fullName} — Full-Stack Engineer, Technical Lead, and maker of automated CNC machinery.`,
+    title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Full-Stack Developer`,
+    description: `Learn about ${SITE_CONFIG.fullName} — Full-Stack Software Developer focused on backend systems and APIs.`,
     url: getCanonicalUrl('/about'),
     type: 'profile',
-    firstName: 'Abdulrahman',
-    lastName: 'Redhwan',
+    firstName: 'Saeed',
+    lastName: 'Bagnanh',
     username: SITE_CONFIG.username,
     gender: 'male',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Systems Architect`,
-    description: `Full-Stack Software Engineer & Technical Lead. Software systems & CNC machine automation.`,
+    description: `Full-Stack Software Developer focused on backend systems, APIs, and modern web applications.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
   },

@@ -1,8 +1,8 @@
 # Project Analysis: Professional Developer Portfolio & Architecture Showcase
 
 ## 1. Project Overview & Identity
-- **Owner & Developer:** Abdulrahman Khalid Abdullah Redhwan (ak01redwan)
-- **Role:** Founder of Madboot Nova, Technical Lead, Senior Software Architect & Full-Stack Engineer
+- **Owner & Developer:** Saeed Mohammed Omer Ba-gnanh (Saeed-Bagnanh)
+- **Role:** Full-Stack Software Developer focused on backend systems and APIs
 - **Core Purpose:** High-performance, modern bilingual portfolio website, digital resume, and engineering case study platform designed to present enterprise deployments, technical skills, open-source repositories, and direct client/recruiter consultation workflows.
 
 ---

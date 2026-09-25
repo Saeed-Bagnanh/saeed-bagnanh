@@ -4,7 +4,7 @@ import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcru
 
 export const metadata: Metadata = {
   title: `Engineering Blog & Technical Insights | ${SITE_CONFIG.shortName}`,
-  description: `Technical deep dives on high-performance Laravel architecture, Nuxt 4 SSR, automated CI/CD pipelines, and custom 3-axis CNC hardware engineering by ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}).`,
+  description: `Technical notes on backend development, API design, databases, and full-stack software by ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}).`,
   alternates: {
     canonical: getCanonicalUrl('/blog'),
     languages: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Engineering Blog & Technical Insights | ${SITE_CONFIG.shortName}`,
-    description: `Deep technical articles and architectural guides on full-stack web platforms, DevOps automation, and CNC machine design.`,
+    description: `Technical articles and practical guides on backend systems, APIs, databases, and full-stack software delivery.`,
     url: getCanonicalUrl('/blog'),
     type: 'website',
     images: [
@@ -47,7 +47,7 @@ export default function BlogPage() {
         '@id': `${getCanonicalUrl('/blog')}#blog`,
         url: getCanonicalUrl('/blog'),
         name: `${SITE_CONFIG.shortName} Engineering Blog`,
-        description: 'Technical insights covering high-concurrency Laravel architecture, Nuxt 4 SSR, automated CI/CD engineering, and CNC machine fabrication.',
+        description: 'Technical insights covering Laravel, Django, Python, APIs, databases, and full-stack development.',
         publisher: {
           '@id': `${SITE_URL}/#website`,
         },

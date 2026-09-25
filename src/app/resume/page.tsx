@@ -4,7 +4,7 @@ import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcru
 
 export const metadata: Metadata = {
   title: `Executive Curriculum Vitae (CV) & Verified Credentials | ${SITE_CONFIG.shortName}`,
-  description: `Official Curriculum Vitae of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Engineer, Technical Lead, and Physical Hardware Maker with 5+ years of production experience in Laravel, Nuxt, Next.js, .NET Core, CI/CD, and CNC automation.`,
+  description: `Official Curriculum Vitae of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Software Developer focused on Laravel, Django, Python, APIs, databases, and modern web applications.`,
   alternates: {
     canonical: getCanonicalUrl('/resume'),
     languages: {
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Curriculum Vitae | ${SITE_CONFIG.fullName} (${SITE_CONFIG.username})`,
-    description: `Senior Full-Stack Software Engineer & Technical Lead CV, verified competencies, and academic credentials.`,
+    description: `Full-Stack Software Developer CV, technical competencies, and academic credentials.`,
     url: getCanonicalUrl('/resume'),
     type: 'profile',
-    firstName: 'Abdulrahman',
-    lastName: 'Redhwan',
+    firstName: 'Saeed',
+    lastName: 'Bagnanh',
     username: SITE_CONFIG.username,
     gender: 'male',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `Curriculum Vitae | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
-    description: `Full-Stack Software Engineer, Founder of Madboot Nova, and Hardware Maker.`,
+    description: `Full-Stack Software Developer specializing in backend systems, APIs, and modern web applications.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
   },
@@ -51,7 +51,7 @@ export default function ResumePage() {
         '@id': `${getCanonicalUrl('/resume')}#webpage`,
         url: getCanonicalUrl('/resume'),
         name: `Curriculum Vitae & Verified Credentials — ${SITE_CONFIG.fullName}`,
-        description: `Executive CV detailing full-stack web engineering, .NET Core systems, CI/CD automation, and hardware CNC prototyping experience of ${SITE_CONFIG.fullName}.`,
+        description: `CV detailing backend and full-stack software development experience of ${SITE_CONFIG.fullName}.`,
         mainEntity: {
           '@id': `${SITE_URL}/#person`,
         },

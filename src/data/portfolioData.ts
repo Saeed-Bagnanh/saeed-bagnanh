@@ -73,20 +73,20 @@ export interface SocialProfile {
 }
 
 export const PERSONAL_INFO = {
-  fullName: 'Abdulrahman Khalid Abdullah Redhwan',
-  fullNameAr: 'عبدالرحمن خالد عبدالله رضوان',
-  shortName: 'Abdulrahman Redhwan',
-  username: 'ak01redwan',
-  title: 'Full-Stack Software Engineer & Technical Lead',
-  titleAr: 'مهندس برمجيات شامل وقائد تقني',
-  agency: 'Madboot Nova',
-  agencyUrl: 'https://madbootnova.com',
-  location: 'Al-Mukalla, Hadhramaut, Yemen',
+  fullName: 'Saeed Mohammed Omer Ba-gnanh',
+  fullNameAr: 'سعيد محمد عمر باجنّاح',
+  shortName: 'Saeed Bagnanh',
+  username: 'Saeed-Bagnanh',
+  title: 'Full-Stack Software Developer',
+  titleAr: 'مطور برمجيات شامل',
+  agency: '',
+  agencyUrl: '',
+  location: 'Mukalla, Hadhramaut, Yemen',
   locationAr: 'المكلا، حضرموت، اليمن',
-  experienceYears: '5+',
-  emails: ['ak01redwan@gmail.com', 'ak01redwan@madbootnova.com'],
-  phones: ['+967 776 716 697', '+967 776 248 526'],
-  github: 'https://github.com/ak01redwan',
+  experienceYears: '10+',
+  emails: ['saeed344422@gmail.com'],
+  phones: [],
+  github: 'https://github.com/Saeed-Bagnanh',
   education: {
     degree: 'B.Sc. Computer Science / Computer Information Systems',
     degreeAr: 'بكالوريوس علوم الحاسوب / نظم المعلومات الحاسوبية',
@@ -102,8 +102,8 @@ export const PERSONAL_INFO = {
   differentiator: {
     headline: 'Bridging High-Throughput Software Architecture with Physical Hardware Engineering',
     headlineAr: 'الجمع بين بنية البرمجيات فائقة الأداء وهندسة الأجهزة المادية والآلات',
-    narrative: 'I am a rare full-stack engineer who also designs and fabricates physical machines. I independently built a precision 3-axis CNC milling machine powered by G-Code/M-Code, Arduino integration, and GRBL/Marlin firmware. This dual mastery in software distributed systems and electro-mechanical hardware gives me an unmatched edge in solving complex engineering challenges.',
-    narrativeAr: 'أنا مهندس برمجيات شامل نادر يجمع بين بناء المنظومات الرقمية وتصميم وتصنيع الآلات الفيزيائية؛ حيث قمت بتصميم وبناء آلة CNC ثلاثية المحاور تعمل بأكواد G-Code وM-Code ومتحكمات Arduino والبرمجيات المضمنة GRBL وMarlin. هذا التناغم بين هندسة البرمجيات والعتاد المادي يمنحني قدرة فائقة على حل التحديات الهندسية المعقدة من جذورها.'
+    narrative: 'I build reliable backend systems and full-stack products, with a practical focus on APIs, database-backed applications, and maintainable delivery. My work spans Laravel, Django, Python, ASP.NET, JavaScript, TypeScript, and cross-platform mobile development.',
+    narrativeAr: 'أبني أنظمة خلفية موثوقة ومنتجات برمجية شاملة مع تركيز عملي على واجهات البرمجة وتطبيقات قواعد البيانات وسهولة الصيانة. تمتد خبرتي عبر Laravel وDjango وPython وASP.NET وJavaScript وTypeScript وتطوير تطبيقات متعددة المنصات.'
   }
 };
 
@@ -172,44 +172,44 @@ export const CASE_STUDIES: CaseStudy[] = [
       }
     ],
     technologies: ['Laravel 12', 'Nuxt.js 4', 'Vue.js 3', 'GitHub Actions', 'HLS Streaming', 'Docker', 'Redis', 'Tailwind CSS', 'TypeScript', 'RESTful API'],
-    githubUrl: 'https://github.com/ak01redwan',
-    liveUrl: 'https://madbootnova.com'
+    githubUrl: 'https://github.com/Saeed-Bagnanh',
+    liveUrl: 'https://github.com/Saeed-Bagnanh'
   },
   {
-    slug: 'cnc-machine-automation',
-    title: 'Custom 3-Axis CNC Machine (Hardware + Firmware + G-Code)',
-    titleAr: 'آلة CNC مخصصة ثلاثية المحاور (عتاد مادي + برمجيات مضمنة)',
-    subtitle: 'Electro-Mechanical Design, Microstepping Calibration, and G-Code Machine Automation',
-    subtitleAr: 'تصميم كهروميكانيكي ومعايرة المحركات الخطية والتحكم الآلي بأكواد G-Code',
+    slug: 'python-api-platform',
+    title: 'Python API Platform',
+    titleAr: 'منصة واجهات برمجية باستخدام Python',
+    subtitle: 'Backend services, REST APIs, and relational data workflows',
+    subtitleAr: 'خدمات خلفية وواجهات REST وتدفقات بيانات علائقية',
     category: 'Hardware & Automation',
     categoryAr: 'عتاد مادي وأتمتة صناعية',
     role: 'Hardware Engineer & Embedded Systems Developer',
     roleAr: 'مهندس عتاد ومطور أنظمة مضمنة',
     period: '2024',
-    image: '/images/cnc-machine.svg',
+    image: '/images/restaurant-system.svg',
     featured: true,
-    summary: 'Independently designed, assembled, and calibrated a fully functional 3-axis CNC milling and cutting machine. Engineered the electrical circuitry, stepper motor drivers, Arduino microcontrollers, and flashed custom GRBL/Marlin firmware for precision G-Code toolpath execution.',
-    summaryAr: 'تصميم وتجميع ومعايرة آلة CNC ثلاثية المحاور مخصصة للقطع والنقش الآلي، مع بناء الدوائر الكهربائية ومحركات الخطوة ودمج لوحات Arduino وبرمجة وتعديل GRBL وMarlin لتنفيذ مسارات G-Code بدقة متناهية.',
-    problem: 'Off-the-shelf industrial CNC machines in the local region are prohibitively expensive and lack modular customizability for specialized fabrication tasks, requiring a custom-engineered, cost-effective electro-mechanical solution.',
-    problemAr: 'ارتفاع تكلفة آلات الـ CNC الصناعية المستوردة وانعدام مرونتها للتعديل المخصص، مما تطلب ابتكار وتصنيع آلة محلية متكاملة تجمع بين القوة والدقة الهندسية والتكلفة الاقتصادية.',
-    approach: 'Designed a rigid gantry structure with dual Y-axis lead screws, calibrated NEMA stepper motors with A4988/DRV8825 drivers for 1/16th microstepping, integrated an Arduino ATmega core, configured spindle relay controls, and tuned acceleration/feed-rate parameters in Marlin/GRBL firmware.',
-    approachAr: 'تصميم هيكل ميكانيكي متين يعتمد على براغي الحركة الدقيقة ومحركات NEMA مع دوائر قيادة متقدمة للتحكم في الخطوات الدقيقة (Microstepping)، ودمج معالجات Arduino مع ضبط دقيق لمعدلات التسارع والسرعة في برمجيات GRBL/Marlin.',
+    summary: 'Designed backend services around clear API contracts, relational data models, authentication, and maintainable application boundaries using Python frameworks.',
+    summaryAr: 'تصميم خدمات خلفية تعتمد على عقود واضحة لواجهات البرمجة ونماذج بيانات علائقية ومصادقة وحدود تطبيق قابلة للصيانة باستخدام أطر Python.',
+    problem: 'Growing applications need backend services that keep data consistent, expose predictable APIs, and remain easy to extend without coupling every feature together.',
+    problemAr: 'تحتاج التطبيقات المتنامية إلى خدمات خلفية تحافظ على اتساق البيانات وتوفر واجهات متوقعة وتبقى قابلة للتوسع دون ربط كل الميزات ببعضها.',
+    approach: 'Built structured Python services with Django and FastAPI, separating request handling, business rules, persistence, and integrations while keeping API responses consistent.',
+    approachAr: 'بناء خدمات Python منظمة عبر Django وFastAPI مع فصل معالجة الطلبات وقواعد الأعمال والتخزين والتكاملات والحفاظ على اتساق استجابات الواجهات البرمجية.',
     architecture: {
-      description: 'Hybrid electro-mechanical control architecture coordinating high-level G-Code commands into real-time pulse-width modulated motor steps.',
-      descriptionAr: 'معمارية تحكم كهروميكانيكية متطورة تترجم تعليمات G-Code/M-Code إلى نبضات كهربائية فائقة الدقة عبر المحاور الثلاثية.',
+      description: 'Layered backend architecture coordinating HTTP requests, application services, relational data, and external integrations.',
+      descriptionAr: 'معمارية خلفية متعددة الطبقات تنسق طلبات HTTP وخدمات التطبيق والبيانات العلائقية والتكاملات الخارجية.',
       highlights: [
-        'Custom 3-Axis Cartesian coordinate mechanics with dual-lead precision screws',
-        'Arduino-based central control unit running tuned GRBL 1.1 firmware',
-        'Hardware limit switches and emergency e-stop circuitry for failsafe operation',
-        'Real-time serial stream parsing of G-Code/M-Code toolpaths with feed hold and spindle PWM',
-        'Sub-millimeter backlash compensation and stepper microstepping calibration'
+        'Django and FastAPI services with predictable REST contracts',
+        'Relational data models with validation and clear ownership boundaries',
+        'Authentication and authorization flows for protected resources',
+        'Service and integration layers that keep external dependencies isolated',
+        'Git-based workflow for maintainable, reviewable changes'
       ],
       highlightsAr: [
-        'نظام ميكانيكي كارتيزي ثلاثي المحاور مع براغي توجيه مزدوجة عالية الصلابة',
-        'وحدة تحكم مركزية Arduino تعمل بإصدار مخصص من GRBL 1.1',
-        'مفاتيح نهاية شوط ودائرة توقف طوارئ فيزيائية لحماية الآلة والمشغل',
-        'معالجة متزامنة لأكواد G-Code وM-Code مع التحكم في سرعة دوران المحرك عبر PWM',
-        'معايرة دقيقة لحساب تعويض الارتداد الحركي وضبط دقة الخطوات الدقيقة'
+        'خدمات Django وFastAPI مع عقود REST واضحة',
+        'نماذج بيانات علائقية مع التحقق وحدود ملكية واضحة',
+        'تدفقات مصادقة وصلاحيات لحماية الموارد',
+        'طبقات خدمات وتكامل تعزل الاعتماديات الخارجية',
+        'سير عمل قائم على Git لتغييرات قابلة للمراجعة والصيانة'
       ]
     },
     measurableOutcomes: [
@@ -238,14 +238,14 @@ export const CASE_STUDIES: CaseStudy[] = [
         labelAr: 'تحكم برمجي متكيف في سرعة دوران المغزل'
       }
     ],
-    technologies: ['Arduino', 'G-Code', 'M-Code', 'CNC GRBL', 'CNC Marlin', 'Embedded C++', 'Java Processing', 'Hardware Circuitry', 'Stepper Drivers', 'PWM Control'],
-    githubUrl: 'https://github.com/ak01redwan'
+    technologies: ['Python', 'Django', 'FastAPI', 'REST APIs', 'SQL', 'Authentication', 'Git', 'GitHub'],
+    githubUrl: 'https://github.com/Saeed-Bagnanh'
   },
   {
     slug: 'ecommerce-dotnet',
     title: 'Enterprise .NET E-Commerce & Custom Integrations',
     titleAr: 'منصات تجارة إلكترونية متقدمة عبر .NET Core',
-    subtitle: 'High-Throughput Digital Commerce Ecosystems (srmedeco.com & madbootnova.com)',
+    subtitle: 'Backend APIs and database-backed business applications',
     subtitleAr: 'منظومات تجارة إلكترونية عالية الكفاءة مع بوابات دفع وربط لوجستي مخصص',
     category: 'E-Commerce',
     categoryAr: 'تجارة إلكترونية وحلول رقمية',
@@ -254,8 +254,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     period: '2023 – 2024',
     image: '/images/ecommerce-platform.svg',
     featured: true,
-    summary: 'Engineered two comprehensive enterprise e-commerce platforms (srmedeco.com and madbootnova.com) utilizing .NET / .NET Core, SQL Server, and custom nopCommerce / Smartstore integrations with tailored payment gateways and shipping logistics.',
-    summaryAr: 'تطوير وتشغيل منصتين للتجارة الإلكترونية (srmedeco.com و madbootnova.com) عبر .NET Core وSQL Server مع تطوير إضافات برمجية مخصصة لبوابات الدفع والشحن في nopCommerce وSmartstore.',
+    summary: 'Developed backend services and database-backed business applications using ASP.NET, SQL, REST APIs, and practical integration patterns.',
+    summaryAr: 'تطوير خدمات خلفية وتطبيقات أعمال تعتمد على قواعد البيانات باستخدام ASP.NET وSQL وواجهات REST وأنماط تكامل عملية.',
     problem: 'Standard e-commerce engines lacked regional payment gateway plugins, experienced sluggish checkout pages under concurrent traffic, and suffered from slow database queries on extensive catalog filters.',
     problemAr: 'افتقار الأنظمة الجاهزة لدعم بوابات الدفع الإقليمية وبطء صفحات إنهاء الطلب عند تزايد الزوار وضعف أداء استعلامات قواعد البيانات عند تصفية المنتجات الكثيرة.',
     approach: 'Developed custom C# plugins adhering to clean architecture, implemented multi-tiered caching in memory and Redis, tuned SQL Server clustered indexes, and built high-converting checkout user experiences.',
@@ -297,8 +297,8 @@ export const CASE_STUDIES: CaseStudy[] = [
       }
     ],
     technologies: ['.NET / .NET Core', 'C#', 'SQL Server', 'nopCommerce', 'Smartstore', 'Redis', 'REST APIs', 'Payment Gateways'],
-    githubUrl: 'https://github.com/ak01redwan',
-    liveUrl: 'https://madbootnova.com'
+    githubUrl: 'https://github.com/Saeed-Bagnanh',
+    liveUrl: 'https://github.com/Saeed-Bagnanh'
   },
   {
     slug: 'university-cms-electron',
@@ -356,7 +356,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       }
     ],
     technologies: ['.NET Core', 'C#', 'Electron.Net', 'SQL Server', 'Windows Forms', 'RESTful APIs', 'Reports & PDF Engine'],
-    githubUrl: 'https://github.com/ak01redwan'
+    githubUrl: 'https://github.com/Saeed-Bagnanh'
   },
   {
     slug: 'restaurant-management-novelsoft',
@@ -414,7 +414,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       }
     ],
     technologies: ['Node.js', 'Express.js', 'SQL Server', 'Docker', 'RESTful APIs', 'Git', 'Swagger'],
-    githubUrl: 'https://github.com/ak01redwan'
+    githubUrl: 'https://github.com/Saeed-Bagnanh'
   }
 ];
 
@@ -434,7 +434,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: 'Python', level: 'Advanced', context: 'Django, Automation, AI Services' },
       { name: 'Java', level: 'Advanced', context: 'Enterprise OOP, Processing' },
       { name: 'C++', level: 'Advanced', context: 'Embedded Systems, Microcontrollers' },
-      { name: 'G-Code & M-Code', level: 'Expert', context: 'CNC Motion Control & Automation' }
+      { name: 'Dart & Flutter', level: 'Advanced', context: 'Cross-platform application development' }
     ]
   },
   {
@@ -476,11 +476,11 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     description: 'Unique capability bridging digital code with precision physical machines.',
     descriptionAr: 'قدرة استثنائية تجمع بين الكود البرمجي والتحكم الفيزيائي في الآلات الصناعية.',
     skills: [
-      { name: 'CNC Machine Engineering', level: 'Expert', context: '3-Axis Mechanical & Electrical Design' },
-      { name: 'Arduino Microcontrollers', level: 'Expert', context: 'ATmega, Sensor & Actuator circuits' },
-      { name: 'CNC GRBL & Marlin', level: 'Expert', context: 'Firmware calibration & pulse timing' },
-      { name: 'Stepper Motor Drivers', level: 'Expert', context: 'A4988/DRV8825 Microstepping tuning' },
-      { name: 'Java Processing', level: 'Advanced', context: 'Machine Vision & Visual Telemetry' }
+      { name: 'Flutter & Dart', level: 'Advanced', context: 'Cross-platform mobile applications' },
+      { name: 'API Integrations', level: 'Advanced', context: 'REST services and external systems' },
+      { name: 'Relational Databases', level: 'Advanced', context: 'SQL-backed application design' },
+      { name: 'Authentication & Authorization', level: 'Advanced', context: 'Secure application workflows' },
+      { name: 'GitHub Workflows', level: 'Proficient', context: 'Version control and collaboration' }
     ]
   },
   {
@@ -516,68 +516,68 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const WORK_EXPERIENCES: ExperienceItem[] = [
   {
-    id: 'madboot-nova',
-    company: 'Madboot Nova',
-    companyAr: 'مادبوت نوفا (Madboot Nova)',
-    role: 'Founder & Technical Lead',
-    roleAr: 'المؤسس والقائد التقني',
-    period: '2024 – Present',
-    periodAr: '2024 – حتى الآن',
-    location: 'Al-Mukalla, Yemen / Remote',
+    id: 'full-stack-development',
+    company: 'Independent Software Development',
+    companyAr: 'تطوير البرمجيات بشكل مستقل',
+    role: 'Full-Stack Software Developer',
+    roleAr: 'مطور برمجيات شامل',
+    period: '2016 – Present',
+    periodAr: '2016 – حتى الآن',
+    location: 'Mukalla, Yemen / Remote',
     locationAr: 'المكلا، اليمن / عن بعد',
     description: [
-      'Founded and currently lead Madboot Nova, an elite software engineering agency delivering high-throughput web platforms, SaaS ecosystems, and enterprise architectures.',
-      'Direct full-stack architecture choices across Laravel, .NET, Next.js, and Nuxt.js, conducting comprehensive code reviews and mentoring engineering teams.',
-      'Spearheaded the flagship Bandwal Academy e-learning platform and enterprise .NET e-commerce implementations, reducing deployment overhead by over 90% via automated GitHub Actions CI/CD.'
+      'Build and maintain backend services, REST APIs, and database-backed applications for web and business workflows.',
+      'Work across Laravel, Django, Python, FastAPI, ASP.NET, JavaScript, and TypeScript to deliver complete product features.',
+      'Use Git and GitHub workflows to keep development organized, reviewable, and ready for continued improvement.'
     ],
     descriptionAr: [
-      'تأسيس وقيادة مادبوت نوفا، وكالة برمجية متخصصة في هندسة وتطوير المنظومات الرقمية عالية الأداء والتجارة الإلكترونية والمنصات السحابية.',
-      'تحديد وتوجيه الخيارات المعمارية عبر Laravel و.NET وNext.js وNuxt.js، وإجراء مراجعات الأكواد وتدريب وتطوير الكفاءات الهندسية.',
-      'قيادة تطوير منصة أكاديمية بندوال التعليمية وحلول التجارة الإلكترونية، وتخفيض زمن النشر بنسبة تفوق 90٪ عبر خطوط CI/CD مؤتمتة بالكامل.'
+      'بناء وصيانة الخدمات الخلفية وواجهات REST وتطبيقات الأعمال المعتمدة على قواعد البيانات.',
+      'العمل عبر Laravel وDjango وPython وFastAPI وASP.NET وJavaScript وTypeScript لتطوير ميزات المنتجات كاملة.',
+      'استخدام Git وGitHub للحفاظ على تطوير منظم وقابل للمراجعة والتحسين المستمر.'
     ],
     keyWins: [
-      'Built automated CI/CD reducing deployments from days to under 3 minutes',
-      'Engineered enterprise e-commerce platforms handling thousands of transactions',
-      'Mentored engineering teams in modern Nuxt.js SSR and Clean Architecture'
+      'Designed API and database flows for maintainable applications',
+      'Delivered backend and full-stack features across multiple frameworks',
+      'Kept codebases organized through GitHub workflows and practical documentation'
     ],
     keyWinsAr: [
-      'بناء خطوط نشر مؤتمتة خفضت وقت النشر من أيام إلى أقل من 3 دقائق',
-      'هندسة منصات تجارة إلكترونية متطورة تدير آلاف العمليات المالية',
-      'تدريب فرق العمل على معايير Nuxt.js SSR وClean Architecture'
+      'تصميم تدفقات الواجهات البرمجية وقواعد البيانات لتطبيقات قابلة للصيانة',
+      'تطوير ميزات خلفية وشاملة عبر أطر عمل متعددة',
+      'الحفاظ على تنظيم المشاريع عبر GitHub والتوثيق العملي'
     ],
-    technologies: ['Laravel 12', 'Nuxt.js 4', 'Next.js 16', '.NET Core', 'Docker', 'GitHub Actions', 'SQL Server', 'Tailwind CSS']
+    technologies: ['Laravel', 'Django', 'Python', 'FastAPI', 'ASP.NET', 'JavaScript', 'TypeScript', 'SQL', 'GitHub']
   },
   {
-    id: 'cnc-project',
-    company: 'Hardware Innovation Lab',
-    companyAr: 'مختبر الابتكار والعتاد المادي',
-    role: 'Hardware Engineer & CNC Maker',
-    roleAr: 'مهندس عتاد ومبتكر آلات CNC',
-    period: '2024',
-    periodAr: '2024',
-    location: 'Al-Mukalla, Yemen',
-    locationAr: 'المكلا، اليمن',
+    id: 'python-backend',
+    company: 'Backend & API Development',
+    companyAr: 'تطوير الأنظمة الخلفية وواجهات البرمجة',
+    role: 'Backend Software Developer',
+    roleAr: 'مطور برمجيات خلفية',
+    period: '2021 – Present',
+    periodAr: '2021 – حتى الآن',
+    location: 'Mukalla, Yemen / Remote',
+    locationAr: 'المكلا، اليمن / عن بعد',
     description: [
-      'Independently researched, fabricated, and calibrated a custom 3-axis CNC milling machine with Arduino, stepper drivers, and G-Code automation.',
-      'Integrated GRBL/Marlin firmware with custom microstepping pulse calibration achieving 0.05mm positioning precision.',
-      'Bridged software algorithms and real-time physical actuation, implementing software spindle PWM and hardware safety interlocks.'
+      'Developed backend applications with Python, Django, FastAPI, Laravel, and ASP.NET.',
+      'Designed REST APIs, relational data models, authentication flows, and service integrations.',
+      'Applied clean coding practices, Git version control, and practical debugging to improve reliability.'
     ],
     descriptionAr: [
-      'البحث المستقل وتصميم وتصنيع آلة CNC ثلاثية المحاور مخصصة مع متحكمات Arduino ومحركات الخطوة وأكواد G-Code.',
-      'برمجة ومعايرة أنظمة GRBL وMarlin والتحكم في النبضات الدقيقة لتحقيق دقة حركة تصل إلى 0.05 ملم.',
-      'الربط الهندسي بين الخوارزميات البرمجية والحركة الميكانيكية اللحظية وتطبيق أنظمة الحماية والسلامة.'
+      'تطوير تطبيقات خلفية باستخدام Python وDjango وFastAPI وLaravel وASP.NET.',
+      'تصميم واجهات REST ونماذج البيانات العلائقية وتدفقات المصادقة وتكامل الخدمات.',
+      'تطبيق ممارسات كتابة كود واضحة وإدارة الإصدارات عبر Git وتحسين الموثوقية من خلال التصحيح العملي.'
     ],
     keyWins: [
-      'Achieved 0.05mm precision across 3 Cartesian axes',
-      'Engineered automated toolpath execution from digital CAD/CAM',
-      'Complete hardware fabrication from raw mechanical & electronic components'
+      'Delivered backend services across Python and PHP ecosystems',
+      'Structured API contracts and relational database models',
+      'Improved maintainability through clear separation of application concerns'
     ],
     keyWinsAr: [
-      'تحقيق دقة متناهية 0.05 ملم عبر المحاور الكارتيزية الثلاثة',
-      'أتمتة كاملة لتنفيذ مسارات الأدوات من التصميم الرقمي إلى القطعة المصنعة',
-      'تصنيع وتجميع متكامل للعتاد من المكونات الميكانيكية والإلكترونية'
+      'تطوير خدمات خلفية عبر بيئتي Python وPHP',
+      'تنظيم عقود واجهات البرمجة ونماذج قواعد البيانات العلائقية',
+      'تحسين قابلية الصيانة عبر فصل مسؤوليات التطبيق بوضوح'
     ],
-    technologies: ['Arduino', 'G-Code', 'M-Code', 'GRBL', 'Marlin', 'Embedded C++', 'Processing', 'Hardware Schematics']
+    technologies: ['Python', 'Django', 'FastAPI', 'Laravel', 'ASP.NET', 'REST APIs', 'SQL', 'Git']
   },
   {
     id: 'novel-soft',
@@ -646,18 +646,9 @@ export const WORK_EXPERIENCES: ExperienceItem[] = [
 ];
 
 export const SOCIAL_PROFILES: SocialProfile[] = [
-  { platform: 'GitHub', url: 'https://github.com/ak01redwan', handle: '@ak01redwan', icon: 'Github' },
-  { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/ak01redwan', handle: 'Abdulrahman Redhwan', icon: 'Linkedin' },
-  { platform: 'X / Twitter', url: 'https://x.com/ak01redwan', handle: '@ak01redwan', icon: 'Twitter' },
-  { platform: 'Stack Overflow', url: 'https://stackoverflow.com/users/ak01redwan', handle: 'ak01redwan', icon: 'Terminal' },
-  { platform: 'Dev.to', url: 'https://dev.to/ak01redwan', handle: 'ak01redwan', icon: 'Code2' },
-  { platform: 'Medium', url: 'https://medium.com/@ak01redwan', handle: '@ak01redwan', icon: 'PenTool' },
-  { platform: 'CodePen', url: 'https://codepen.io/ak01redwan', handle: 'ak01redwan', icon: 'Box' },
-  { platform: 'Behance', url: 'https://www.behance.net/ak01redwan', handle: 'ak01redwan', icon: 'Image' },
-  { platform: 'Dribbble', url: 'https://dribbble.com/ak01redwan', handle: 'ak01redwan', icon: 'Dribbble' },
-  { platform: 'Email (Personal)', url: 'mailto:ak01redwan@gmail.com', handle: 'ak01redwan@gmail.com', icon: 'Mail' },
-  { platform: 'Email (Agency)', url: 'mailto:ak01redwan@madbootnova.com', handle: 'ak01redwan@madbootnova.com', icon: 'Mail' },
-  { platform: 'Phone / WhatsApp', url: 'https://wa.me/967776716697', handle: '+967 776 716 697', icon: 'Phone' }
+  { platform: 'GitHub', url: 'https://github.com/Saeed-Bagnanh', handle: '@Saeed-Bagnanh', icon: 'Github' },
+  { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/saeed-bagnanh-36b077289', handle: 'Saeed Bagnanh', icon: 'Linkedin' },
+  { platform: 'Email', url: 'mailto:saeed344422@gmail.com', handle: 'saeed344422@gmail.com', icon: 'Mail' }
 ];
 
 export const BLOG_POSTS = [
@@ -673,7 +664,7 @@ export const BLOG_POSTS = [
     readTimeAr: '٦ دقائق قراءة',
     excerpt: 'How we eliminated manual deployment errors, automated testing, and achieved zero-downtime production deployments for the Bandwal Academy platform.',
     excerptAr: 'كيف قمنا بالقضاء على أخطاء النشر اليدوي وأتمتة الفحص الشامل وتحقيق نشر فوري بدون انقطاع لمنصة أكاديمية بندوال.',
-    author: 'Abdulrahman Redhwan',
+    author: 'Saeed Bagnanh',
     content: `
       <p class="lead">Manual deployments are a ticking time bomb in enterprise systems. When a release requires SSHing into production, pulling Git commits, running composer install, compiling assets, and clearing caches manually, human error is inevitable.</p>
       
@@ -695,29 +686,29 @@ export const BLOG_POSTS = [
     `
   },
   {
-    id: 'building-cnc-machine-gcode-arduino',
-    title: 'Building a 3-Axis CNC Machine from Scratch: Microstepping, G-Code Parsing & Marlin Firmware',
-    titleAr: 'بناء آلة CNC ثلاثية المحاور من الصفر: الخطوات الدقيقة، معالجة G-Code وتعديل Marlin',
+    id: 'designing-reliable-python-apis',
+    title: 'Designing Reliable Python APIs for Growing Products',
+    titleAr: 'تصميم واجهات Python موثوقة للمنتجات المتنامية',
     date: 'July 2026',
     dateAr: 'يوليو 2026',
     category: 'Hardware & Embedded',
     categoryAr: 'العتاد والأنظمة المضمنة',
     readTime: '8 min read',
     readTimeAr: '٨ دقائق قراءة',
-    excerpt: 'A deep technical journey into designing Cartesian mechanics, tuning A4988 stepper drivers for 1/16 microstepping, and flashing custom Arduino firmware for automated machining.',
-    excerptAr: 'رحلة هندسية عميقة في تصميم الحركة الكارتيزية، معايرة دوائر محركات الخطوة للنبضات الدقيقة، وبرمجة متحكمات Arduino للتشغيل الآلي.',
-    author: 'Abdulrahman Redhwan',
+    excerpt: 'Practical patterns for separating request handling, business rules, persistence, and integrations in Django and FastAPI services.',
+    excerptAr: 'أنماط عملية لفصل معالجة الطلبات وقواعد الأعمال والتخزين والتكاملات في خدمات Django وFastAPI.',
+    author: 'Saeed Bagnanh',
     content: `
       <p class="lead">Most web developers operate exclusively in virtual memory buffers and HTTP requests. Bridging the divide between digital software logic and electro-mechanical physical execution fundamentally sharpens your systems thinking.</p>
       
-      <h3>1. Mechanical Rigidity & Cartesian Geometry</h3>
-      <p>A CNC machine's accuracy is strictly bound by mechanical resonance and backlash. We engineered a dual-lead screw Y-axis configuration to prevent gantry deflection during rapid directional changes under load.</p>
+      <h3>1. Start with a clear API boundary</h3>
+      <p>A backend becomes easier to change when request parsing, validation, business rules, and persistence have clear responsibilities. This keeps framework details from leaking into every part of the application.</p>
 
-      <h3>2. Microstepping & Pulse Calibration</h3>
-      <p>Standard 1.8° stepper motors provide 200 full steps per revolution. By implementing 1/16th microstepping through precision driver tuning, we increased angular resolution to 3,200 pulses per revolution, yielding 0.05mm repeatable spatial accuracy.</p>
+      <h3>2. Model data around real workflows</h3>
+      <p>Relational models should reflect the product's language and protect the invariants that matter. Validation belongs close to the boundary, while reusable business rules belong in services that can be tested directly.</p>
 
-      <h3>3. Real-Time G-Code Interpretation</h3>
-      <p>Commands such as <code>G01 X120.5 Y45.2 Z-1.5 F800</code> are parsed in real time by the ATmega microcontroller, computing trapezoidal acceleration profiles to prevent motor stall while maximizing cutting speed.</p>
+      <h3>3. Make integrations replaceable</h3>
+      <p>External services change. Isolating integrations behind small interfaces makes failures easier to handle and allows the core application to remain stable when a provider or transport changes.</p>
       
       <blockquote>"Understanding physics, electrical timing, and mechanical tolerances makes you a vastly better software architect. Hardware leaves zero room for sloppy assumptions."</blockquote>
     `
@@ -734,9 +725,9 @@ export const BLOG_POSTS = [
     readTimeAr: '٥ دقائق قراءة',
     excerpt: 'Best practices for custom payment gateway plugins, SQL Server index optimization, and distributed caching in enterprise .NET e-commerce systems.',
     excerptAr: 'أفضل الممارسات لتطوير إضافات بوابات الدفع المخصصة، تحسين فهارس SQL Server والتخزين المؤقت الموزع في أنظمة .NET.',
-    author: 'Abdulrahman Redhwan',
+    author: 'Saeed Bagnanh',
     content: `
-      <p class="lead">In enterprise digital commerce, page latency directly dictates conversion rates. A 100ms delay can reduce sales by up to 7%. Here is how we engineered high-speed .NET e-commerce platforms for srmedeco.com and madbootnova.com.</p>
+      <p class="lead">Reliable software starts with clear boundaries between application logic, data, and external services. This article outlines practical patterns for building maintainable backend systems.</p>
       
       <h3>Custom Plugin Architecture</h3>
       <p>Rather than modifying core framework classes, we developed decoupled C# plugins using dependency injection, isolating regional payment webhooks and custom shipping calculations.</p>

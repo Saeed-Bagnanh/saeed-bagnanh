@@ -142,7 +142,7 @@ export default function Hero() {
                 <div className="relative w-full aspect-square rounded-2xl overflow-hidden mb-6 bg-slate-950 border border-slate-800">
                   <Image 
                     src="/images/profile-avatar.svg" 
-                    alt="Abdulrahman Khalid Abdullah Redhwan" 
+                    alt="Saeed Mohammed Omer Ba-gnanh"
                     fill 
                     priority
                     className="object-cover"
@@ -152,7 +152,7 @@ export default function Hero() {
                   {/* Floating Badges */}
                   <div className="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full border border-emerald-500/40 text-emerald-400 text-xs font-mono font-bold flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    ak01redwan
+                    Saeed-Bagnanh
                   </div>
 
                   <div className="absolute bottom-3 right-3 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full border border-cyan-500/40 text-cyan-400 text-xs font-mono font-bold">
@@ -164,25 +164,25 @@ export default function Hero() {
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-xs font-mono text-slate-500 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800/80 pb-2">
                     <span>ARCHITECTURAL CALIBER</span>
-                    <span className="text-emerald-500 font-bold">SENIOR / LEAD</span>
+                    <span className="text-emerald-500 font-bold">BACKEND / FULL-STACK</span>
                   </div>
 
                   <div className="grid grid-cols-2 gap-2 text-xs font-medium">
                     <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800/60 flex items-center gap-2">
                       <Layers size={14} className="text-emerald-500" />
-                      <span>Laravel 12 / Nuxt 4</span>
+                      <span>Laravel / Django</span>
                     </div>
                     <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800/60 flex items-center gap-2">
                       <Cpu size={14} className="text-cyan-500" />
-                      <span>CNC / Arduino</span>
+                      <span>Python / FastAPI</span>
                     </div>
                     <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800/60 flex items-center gap-2">
                       <Sparkles size={14} className="text-blue-500" />
-                      <span>Next.js 16 / React 19</span>
+                      <span>JavaScript / TypeScript</span>
                     </div>
                     <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800/60 flex items-center gap-2">
                       <Terminal size={14} className="text-indigo-500" />
-                      <span>.NET Core / SQL</span>
+                      <span>ASP.NET / SQL</span>
                     </div>
                   </div>
                 </div>

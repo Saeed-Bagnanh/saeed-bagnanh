@@ -33,7 +33,7 @@ const FALLBACK_REPOS: Repo[] = [
     id: 1,
     name: 'bandwal-core-platform',
     description: 'High-performance Laravel 12 multi-tenant platform with Nuxt 4, SSR, and zero-downtime deployment pipelines.',
-    html_url: 'https://github.com/ak01redwan',
+    html_url: 'https://github.com/Saeed-Bagnanh',
     stargazers_count: 28,
     forks_count: 7,
     language: 'PHP',
@@ -41,9 +41,9 @@ const FALLBACK_REPOS: Repo[] = [
   },
   {
     id: 2,
-    name: 'cnc-grbl-gcode-controller',
-    description: 'Custom 3-Axis Arduino firmware and G-code parser with sub-millimeter precision calibration routines.',
-    html_url: 'https://github.com/ak01redwan',
+            name: 'my-first-agent',
+    description: 'A personal experiment exploring agent workflows and software development.',
+            html_url: 'https://github.com/Saeed-Bagnanh/my-first-agent',
     stargazers_count: 42,
     forks_count: 12,
     language: 'C++',
@@ -53,7 +53,7 @@ const FALLBACK_REPOS: Repo[] = [
     id: 3,
     name: 'enterprise-dotnet-ecommerce',
     description: 'Scalable .NET 8 / C# multi-vendor medical equipment store with real-time inventory and analytics.',
-    html_url: 'https://github.com/ak01redwan',
+            html_url: 'https://github.com/Saeed-Bagnanh/saeed-bagnanh',
     stargazers_count: 35,
     forks_count: 9,
     language: 'C#',
@@ -63,7 +63,7 @@ const FALLBACK_REPOS: Repo[] = [
     id: 4,
     name: 'university-academic-cms',
     description: 'Academic management system with Electron.NET desktop client and automated grading matrices.',
-    html_url: 'https://github.com/ak01redwan',
+            html_url: 'https://github.com/Saeed-Bagnanh/is-a-dev-subdomains-repo',
     stargazers_count: 19,
     forks_count: 4,
     language: 'TypeScript',
@@ -79,7 +79,7 @@ export default function GitHubActivity() {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/ak01redwan/repos?sort=updated&per_page=4');
+        const response = await fetch('https://api.github.com/users/Saeed-Bagnanh/repos?sort=updated&per_page=4');
         const contentType = response.headers.get('content-type');
         if (response.ok && contentType && contentType.includes('application/json')) {
           const data = await response.json();
@@ -106,7 +106,7 @@ export default function GitHubActivity() {
             <h3 className="text-4xl font-display font-bold">{t('github.title')}</h3>
           </div>
           <a 
-            href="https://github.com/ak01redwan" 
+            href="https://github.com/Saeed-Bagnanh"
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl font-semibold hover:scale-105 transition-transform shadow-lg"

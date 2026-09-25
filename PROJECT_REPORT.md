@@ -1,7 +1,7 @@
 # Comprehensive Project Audit & Technical Architecture Report
 **Project Name:** Professional Developer Portfolio & Systems Architecture Showcase  
-**Developer & Technical Lead:** Abdulrahman Khalid Abdullah Redhwan  
-**Agency / Organization:** Madboot Nova  
+**Developer:** Saeed Mohammed Omer Ba-gnanh
+**Profile:** Full-Stack Software Developer
 **Generated At:** August 2026  
 **Status:** Production Ready (Next.js 16 App Router)
 
@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary & Project Purpose
 
-This project is an enterprise-grade personal portfolio, digital resume, and engineering case study showcase developed for **Abdulrahman Khalid Abdullah Redhwan** (Founder of Madboot Nova, Technical Lead, and Senior Software Architect). 
+This project is a personal portfolio and digital resume for **Saeed Mohammed Omer Ba-gnanh**, a full-stack software developer focused on backend systems, APIs, databases, and modern web applications.
 
 The platform is designed to:
 1. **Demonstrate High-Level Technical Mastery**: Showcase 10+ years of software architecture, full-stack engineering, microservices orchestration, and cross-platform leadership (spanning C#, Java, Python, C++, Laravel, Nuxt.js, React, and Next.js).
@@ -156,7 +156,7 @@ Typography is loaded from Google Fonts in `src/index.css` and mapped via CSS var
 - **Projects Teaser (`Projects.tsx`)**:
   - Grid of enterprise case studies with hover overlays linking to source code and live demonstrations.
 - **GitHub Live Activity Feed (`GitHubActivity.tsx`)**:
-  - Real-time client-side query to the GitHub REST API for `@ak01redwan`.
+  - Real-time client-side query to the GitHub REST API for `@Saeed-Bagnanh`.
   - Displays top 4 most recently updated public repositories with star counts, fork counts, and color-coded language tags.
 
 ### 5.2 About Page (`/about`) — `src/app/about/page.tsx`
@@ -170,7 +170,7 @@ Typography is loaded from Google Fonts in `src/index.css` and mapped via CSS var
   - Core Technical Tenets card: Scalability by Default, Rigorous Code Quality, Performance Obsession, Architectural Supremacy, and Automated Deployment.
 - **Work History Timeline (`Experience.tsx`)**:
   - Alternating vertical timeline depicting career milestones:
-    1. **Madboot Nova** (Present): Founder & Technical Lead.
+    1. **Independent Software Development** (Present): Full-Stack Software Developer.
     2. **Bootfi** (2024–2025): Frontend Developer (Nuxt.js / SSR / Vue 3).
     3. **Novel Soft Company** (2023–2024): Software Developer (Node.js, Express, Windows Forms, SQL Server).
     4. **Freelance / CNC & Embedded Systems** (2019–Present): Embedded Systems & G-Code Automation Developer.
@@ -181,13 +181,13 @@ Typography is loaded from Google Fonts in `src/index.css` and mapped via CSS var
   - **nopCommerce Integrations**: Custom payment gateways and logistics shipping plugins for nopCommerce and Smartstore (.NET, C#, SQL Server).
   - **AI Background Remover**: Intelligent image isolation service (Python, Flask, rembg, Docker, REST API).
   - **University CMS Systems**: Enterprise multi-tier portal built for Ahgaff University (.NET / Umbraco, modern Python / Django transition).
-  - **SrmedEco Platform**: Microservices-based digital commerce architecture (Node.js, NestJS, PostgreSQL, Redis).
+  - **Backend API Platforms**: REST services and database-backed application architecture using Python, Laravel, ASP.NET, and SQL.
 - **Custom Architecture Inquiry CTA**: Full-width card inviting enterprise architectural audits with a direct link to GitHub repositories.
 
 ### 5.4 Contact Page (`/contact`) — `src/app/contact/page.tsx`
 - **Direct Engagement Header**: Introduction inviting technical consultations.
 - **Contact Overview (`Contact.tsx`)**:
-  - Direct information cards for Executive Email (`ak01redwan@gmail.com`), Direct Phone (`+967 776 248 526`), and Headquarters Location (`Mukalla, Yemen`).
+  - Direct information cards for professional email (`saeed344422@gmail.com`) and location (`Mukalla, Yemen`).
   - Complete 9-network social icon hub.
   - High-conversion interactive contact form with Full Name, Email Address, Subject, and Message inputs.
 - **Service Guarantees & SLAs**:
@@ -279,14 +279,14 @@ export interface SocialLink {
 ## 8. SEO, Meta Tags & Structured Data
 
 1. **Metadata Configuration (`src/app/layout.tsx`)**:
-   - `title`: `Abdulrahman Khalid Abdullah Redhwan | Software Architect`
+  - `title`: `Saeed Mohammed Omer Ba-gnanh | Full-Stack Software Developer`
    - `description`: Comprehensive summary of expertise, agency leadership, and engineering specialties.
    - `openGraph`: Configured with type `website` for social media preview card generation.
 2. **Schema.org Structured Data (JSON-LD)**:
-   - Type: `Person` & `Organization` (`Madboot Nova`).
+  - Type: `Person` & `WebSite`.
    - Fields: Name, Job Title, URL, SameAs links (GitHub, LinkedIn), and `knowsAbout` skills array.
 3. **Automated Robots Directive (`src/app/robots.ts`)**:
-   - Static route returning allow rule for all user agents and declaring sitemap location `https://madbootnova.com/sitemap.xml`.
+  - Static route returning allow rule for all user agents and declaring the configured sitemap location.
 4. **Automated XML Sitemap (`src/app/sitemap.ts`)**:
    - Maps all key routes (`/`, `/about`, `/projects`, `/blog`, `/contact`) with priorities and change frequencies.
 

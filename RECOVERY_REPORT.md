@@ -1,5 +1,5 @@
 # Project Forensic Recovery & Production Repair Report
-**Project:** Abdulrahman Redhwan Portfolio & Systems Engineering Showcase  
+**Project:** Saeed Bagnanh Personal Portfolio
 **Role:** Senior Next.js Architect & Full-Stack Systems Engineer  
 **Date:** August 17, 2026  
 **Final Status:** `PRODUCTION READY`

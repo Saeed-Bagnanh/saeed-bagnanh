@@ -1,7 +1,7 @@
 # Comprehensive SEO, Metadata, Entity Graph & Architectural Audit Report
 
-**Target Profile / Entity**: Abdulrahman Khalid Abdullah Redhwan (`ak01redwan`)  
-**Deployment Target**: `https://ak01redwan-portfolio.vercel.app`  
+**Target Profile / Entity**: Saeed Mohammed Omer Ba-gnanh (`Saeed-Bagnanh`)
+**Deployment Target**: `https://saeed-bagnanh.vercel.app`
 **Application Architecture**: Next.js 16 (App Router), React 19, Tailwind CSS v4, Lucide Icons, Static Export (`output: "export"`)  
 **Audit Date**: August 2026  
 **Status**: **100% Production Ready & Validated**
@@ -13,8 +13,8 @@
 This comprehensive audit was performed across all routing, metadata, Open Graph, Twitter Cards, Schema.org Entity Graphs, sitemaps, robots configuration, and bilingual (English/Arabic) UI layers.
 
 ### Key Remediation Highlights:
-- **Eliminated Domain Fragmentation**: Created a single source of truth (`SITE_URL` in `src/lib/siteConfig.ts`) configured to `process.env.NEXT_PUBLIC_SITE_URL || 'https://ak01redwan-portfolio.vercel.app'`. All `metadataBase`, canonical URLs, Open Graph images, Schema.org IDs, `sitemap.xml`, and `robots.txt` now dynamically resolve to this canonical source with zero conflicting template domains.
-- **Root Person & WebSite Entity Authority**: Implemented a Schema.org `@graph` anchoring `ak01redwan` (`Abdulrahman Khalid Abdullah Redhwan` / `عبدالرحمن خالد عبدالله رضوان`), indexing all known professional aliases in English and Arabic, alumni credentials from Al-Ahgaff University, verified GitHub/LinkedIn/X/Dev.to/StackOverflow/Medium sameAs links, and occupational skill arrays.
+- **Eliminated Domain Fragmentation**: Created a single source of truth (`SITE_URL` in `src/lib/siteConfig.ts`) configured to `process.env.NEXT_PUBLIC_SITE_URL || 'https://saeed-bagnanh.vercel.app'`.
+- **Root Person & WebSite Entity Authority**: Implemented a Schema.org graph for Saeed Mohammed Omer Ba-gnanh with verified GitHub and LinkedIn profiles, education, location, and backend engineering skills.
 - **Deep Structured Data Across All Pages**:
   - `ProfilePage` and `BreadcrumbList` on `/about` and `/resume`.
   - `CollectionPage` and `BreadcrumbList` on `/projects`.
@@ -37,16 +37,16 @@ File: `src/lib/siteConfig.ts`
 
 ```typescript
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://ak01redwan-portfolio.vercel.app'
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://saeed-bagnanh.vercel.app'
 ).replace(/\/+$/, '');
 
 export const SITE_CONFIG = {
-  name: 'Abdulrahman Redhwan',
-  fullName: 'Abdulrahman Khalid Abdullah Redhwan',
-  fullNameAr: 'عبدالرحمن خالد عبدالله رضوان',
-  shortName: 'Abdulrahman Redhwan',
-  shortNameAr: 'عبدالرحمن رضوان',
-  username: 'ak01redwan',
+  name: 'Saeed Bagnanh',
+  fullName: 'Saeed Mohammed Omer Ba-gnanh',
+  fullNameAr: 'سعيد محمد عمر باجنّاح',
+  shortName: 'Saeed Bagnanh',
+  shortNameAr: 'سعيد باجنّاح',
+  username: 'Saeed-Bagnanh',
   title: 'Full-Stack Software Engineer & Technical Lead',
   titleAr: 'مهندس برمجيات شامل وقائد تقني',
   location: 'Al-Mukalla, Hadhramaut, Yemen',
@@ -67,14 +67,14 @@ export const SITE_CONFIG = {
 
 | Route | Page Type | Schema.org Type | Canonical URL | OG Type |
 |---|---|---|---|---|
-| `/` | Home / Portfolio | `Person`, `WebSite` | `https://ak01redwan-portfolio.vercel.app` | `website` |
-| `/about` | About & Bio | `ProfilePage`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/about` | `profile` |
-| `/projects` | Case Studies | `CollectionPage`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/projects` | `website` |
-| `/projects/[slug]` | Case Study Detail | `TechArticle`, `SoftwareSourceCode`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/projects/{slug}` | `article` |
-| `/blog` | Tech Blog | `Blog`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/blog` | `website` |
-| `/blog/[id]` | Blog Article | `BlogPosting`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/blog/{id}` | `article` |
-| `/resume` | CV & Credentials | `ProfilePage`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/resume` | `profile` |
-| `/contact` | Consultation Channel | `ContactPage`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/contact` | `website` |
+| `/` | Home / Portfolio | `Person`, `WebSite` | `https://saeed-bagnanh.vercel.app` | `website` |
+| `/about` | About & Bio | `ProfilePage`, `BreadcrumbList` | `https://saeed-bagnanh.vercel.app/about` | `profile` |
+| `/projects` | Case Studies | `CollectionPage`, `BreadcrumbList` | `https://saeed-bagnanh.vercel.app/projects` | `website` |
+| `/projects/[slug]` | Case Study Detail | `TechArticle`, `SoftwareSourceCode`, `BreadcrumbList` | `https://saeed-bagnanh.vercel.app/projects/{slug}` | `article` |
+| `/blog` | Tech Blog | `Blog`, `BreadcrumbList` | `https://saeed-bagnanh.vercel.app/blog` | `website` |
+| `/blog/[id]` | Blog Article | `BlogPosting`, `BreadcrumbList` | `https://saeed-bagnanh.vercel.app/blog/{id}` | `article` |
+| `/resume` | CV & Credentials | `ProfilePage`, `BreadcrumbList` | `https://saeed-bagnanh.vercel.app/resume` | `profile` |
+| `/contact` | Consultation Channel | `ContactPage`, `BreadcrumbList` | `https://saeed-bagnanh.vercel.app/contact` | `website` |
 
 ---
 
@@ -82,8 +82,8 @@ export const SITE_CONFIG = {
 
 ### Search Query Coverage:
 The Knowledge Graph and metadata explicitly index:
-1. **Primary Names**: Abdulrahman Khalid Abdullah Redhwan, عبدالرحمن خالد عبدالله رضوان
-2. **Short Handles**: ak01redwan, Abdulrahman Redhwan, عبدالرحمن رضوان
+1. **Primary Name**: Saeed Mohammed Omer Ba-gnanh, سعيد محمد عمر باجنّاح
+2. **Public Handles**: Saeed-Bagnanh, Saeed Bagnanh
 3. **Colloquial Aliases**: Abdu Redwan, Abdu Khalid, عبدالرحمن خالد, عبدو رضوان
 4. **Keyword Searches**: ak programmer, ak developer, ak01code, ak مبرمج, ak المطور
 5. **Geographical Queries**: Yemen Software Engineer, Al-Mukalla Developer, Hadhramaut Full-Stack Engineer, مبرمج حضرموت، مهندس برمجيات اليمن

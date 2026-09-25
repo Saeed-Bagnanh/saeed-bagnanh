@@ -4,7 +4,7 @@ import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcru
 
 export const metadata: Metadata = {
   title: `Contact & Architectural Consultation | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
-  description: `Initiate an engineering consultation or project inquiry with ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Engineer, Technical Lead, and Founder of Madboot Nova. Guaranteed SLA response within 24 hours.`,
+  description: `Contact ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) about backend systems, API development, and full-stack software projects.`,
   alternates: {
     canonical: getCanonicalUrl('/contact'),
     languages: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Contact ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Engineering Inquiry`,
-    description: `Get in touch for enterprise software architecture, full-stack web platforms, API development, or hardware CNC automation projects.`,
+    description: `Get in touch for backend systems, full-stack web platforms, API development, and database-backed applications.`,
     url: getCanonicalUrl('/contact'),
     type: 'website',
     images: [
@@ -47,7 +47,7 @@ export default function ContactPage() {
         '@id': `${getCanonicalUrl('/contact')}#webpage`,
         url: getCanonicalUrl('/contact'),
         name: `Contact & Direct Engineering Consultation — ${SITE_CONFIG.fullName}`,
-        description: `Direct inquiry channel for high-throughput software systems, cloud architecture, and CNC hardware projects with ${SITE_CONFIG.fullName}.`,
+        description: `Direct inquiry channel for backend systems, APIs, and full-stack software projects with ${SITE_CONFIG.fullName}.`,
         mainEntity: {
           '@id': `${SITE_URL}/#person`,
         },

@@ -79,21 +79,13 @@ export default function BlogPostClient({ id }: BlogPostClientProps) {
       {/* Share / Author Footer */}
       <div className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div>
-          <h4 className="text-sm font-bold text-slate-900 dark:text-white">Written by Abdulrahman Redhwan</h4>
-          <p className="text-xs text-slate-500">Full-Stack Software Engineer & Founder at Madboot Nova</p>
+          <h4 className="text-sm font-bold text-slate-900 dark:text-white">Written by Saeed Bagnanh</h4>
+          <p className="text-xs text-slate-500">Full-Stack Software Developer</p>
         </div>
 
         <div className="flex gap-3">
           <a 
-            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent('https://madbootnova.com/blog/' + post.id)}`}
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-xs font-bold rounded-xl hover:bg-emerald-500 hover:text-white transition-all"
-          >
-            Share on X
-          </a>
-          <a 
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://madbootnova.com/blog/' + post.id)}`}
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://saeed-bagnanh.vercel.app/blog/${post.id}`)}`}
             target="_blank" 
             rel="noopener noreferrer"
             className="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-xs font-bold rounded-xl hover:bg-emerald-500 hover:text-white transition-all"

@@ -4,7 +4,7 @@ import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcru
 
 export const metadata: Metadata = {
   title: `Engineering Projects & Architecture Case Studies | ${SITE_CONFIG.shortName}`,
-  description: `Explore enterprise case studies by ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}): High-Throughput Laravel 12 & Nuxt 4 Ecosystems, .NET Core Commerce, Automated Multi-Tier CI/CD, and 3-Axis CNC Machining Machines.`,
+  description: `Explore software projects by ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}), covering backend systems, APIs, databases, and full-stack applications.`,
   alternates: {
     canonical: getCanonicalUrl('/projects'),
     languages: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Engineering Projects & Case Studies | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
-    description: `Deep architectural case studies spanning enterprise full-stack development and physical CNC hardware automation.`,
+    description: `Software case studies spanning backend development, APIs, databases, and full-stack applications.`,
     url: getCanonicalUrl('/projects'),
     type: 'website',
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `Engineering Projects & Case Studies | ${SITE_CONFIG.shortName}`,
-    description: `Enterprise case studies in Laravel 12, Nuxt 4, Next.js, and CNC hardware automation.`,
+    description: `Software case studies in Laravel, Django, Python, ASP.NET, JavaScript, TypeScript, and API development.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
   },

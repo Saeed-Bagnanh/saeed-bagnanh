@@ -43,9 +43,9 @@ export const SITE_URL = (
 export const SITE_CONFIG = {
   name: 'Saeed Bagnanh',
   fullName: 'Saeed Mohammed Omer Ba-gnanh',
-  fullNameAr: 'سعيد محمد عمر باجنّاح',
+  fullNameAr: 'سعيد محمد عمر باقنانة',
   shortName: 'Saeed Bagnanh',
-  shortNameAr: 'سعيد باجنّاح',
+  shortNameAr: 'سعيد باقنانة',
   username: 'Saeed-Bagnanh',
   title: 'Full-Stack Software Engineer & Technical Lead',
   titleAr: 'مهندس برمجيات شامل وقائد تقني',
@@ -82,7 +82,7 @@ export const SITE_CONFIG = {
 
 ### Search Query Coverage:
 The Knowledge Graph and metadata explicitly index:
-1. **Primary Name**: Saeed Mohammed Omer Ba-gnanh, سعيد محمد عمر باجنّاح
+1. **Primary Name**: Saeed Mohammed Omer Ba-gnanh, سعيد محمد عمر باقنانة
 2. **Public Handles**: Saeed-Bagnanh, Saeed Bagnanh
 3. **Colloquial Aliases**: Abdu Redwan, Abdu Khalid, عبدالرحمن خالد, عبدو رضوان
 4. **Keyword Searches**: ak programmer, ak developer, ak01code, ak مبرمج, ak المطور

@@ -74,7 +74,7 @@ export interface SocialProfile {
 
 export const PERSONAL_INFO = {
   fullName: 'Saeed Mohammed Omer Ba-gnanh',
-  fullNameAr: 'سعيد محمد عمر باجنّاح',
+  fullNameAr: 'سعيد محمد عمر باقنانة',
   shortName: 'Saeed Bagnanh',
   username: 'Saeed-Bagnanh',
   title: 'Full-Stack Software Developer',

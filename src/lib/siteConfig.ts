@@ -10,9 +10,9 @@ export const SITE_URL = (
 export const SITE_CONFIG = {
   name: 'Saeed Bagnanh',
   fullName: 'Saeed Mohammed Omer Ba-gnanh',
-  fullNameAr: 'سعيد محمد عمر باجنّاح',
+  fullNameAr: 'سعيد محمد عمر باقنانة',
   shortName: 'Saeed Bagnanh',
-  shortNameAr: 'سعيد باجنّاح',
+  shortNameAr: 'سعيد باقنانة',
   username: 'Saeed-Bagnanh',
   
   title: 'Full-Stack Software Developer',
@@ -22,7 +22,7 @@ export const SITE_CONFIG = {
   taglineAr: 'أنظمة خلفية وواجهات برمجية ومنتجات شاملة موثوقة',
   
   description: 'Professional portfolio of Saeed Mohammed Omer Ba-gnanh, a full-stack software developer from Mukalla, Yemen, focused on backend systems, APIs, Laravel, Django, Python, and modern web applications.',
-  descriptionAr: 'الملف المهني لسعيد محمد عمر باجنّاح، مطور برمجيات شامل من المكلا في اليمن، يركز على الأنظمة الخلفية وواجهات البرمجة وLaravel وDjango وPython وتطبيقات الويب الحديثة.',
+  descriptionAr: 'الملف المهني لسعيد محمد عمر باقنانة، مطور برمجيات شامل من المكلا في اليمن، يركز على الأنظمة الخلفية وواجهات البرمجة وLaravel وDjango وPython وتطبيقات الويب الحديثة.',
   
   location: 'Al-Mukalla, Hadhramaut, Yemen',
   locationAr: 'المكلا، حضرموت، اليمن',
@@ -43,7 +43,7 @@ export const SITE_CONFIG = {
   
   aliases: ['Saeed Mohammed Omer Ba-gnanh', 'Saeed Bagnanh', 'Saeed-Bagnanh'],
   
-  aliasesAr: ['سعيد محمد عمر باجنّاح', 'سعيد باجنّاح'],
+  aliasesAr: ['سعيد محمد عمر باقنانة', 'سعيد باقنانة'],
   
   coreSkills: [
     'Laravel 12',
@@ -154,7 +154,7 @@ export function generateRootJsonLd() {
         alternateName: [
           'Saeed Bagnanh Portfolio',
           'Saeed Mohammed Omer Ba-gnanh Portfolio',
-          'موقع سعيد باجنّاح',
+          'موقع سعيد باقنانة',
         ],
         description: SITE_CONFIG.description,
         inLanguage: ['en-US', 'ar-YE'],
